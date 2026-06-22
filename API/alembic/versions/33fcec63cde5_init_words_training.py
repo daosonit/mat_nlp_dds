@@ -21,8 +21,6 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Upgrade schema."""
-    # Create schema if not exists
-    op.execute("CREATE SCHEMA IF NOT EXISTS cars;")
 
     # Create enum type
     sentiment_type = postgresql.ENUM(
@@ -30,7 +28,6 @@ def upgrade() -> None:
         "negative",
         "neutral",
         name="sentiment_type",
-        schema="cars",
         create_type=False,
     )
     sentiment_type.create(op.get_bind(), checkfirst=True)
@@ -53,7 +50,6 @@ def upgrade() -> None:
                 "negative",
                 "neutral",
                 name="sentiment_type",
-                schema="cars",
                 create_type=False,
             ),
             nullable=False,
@@ -67,11 +63,10 @@ def upgrade() -> None:
             server_default=sa.text("now()"),
             nullable=False,
         ),
-        schema="cars",
     )
 
 
 def downgrade() -> None:
     """Downgrade schema."""
-    op.drop_table("words_training", schema="cars")
-    op.execute("DROP TYPE IF EXISTS cars.sentiment_type;")
+    op.drop_table("words_training")
+    op.execute("DROP TYPE IF EXISTS sentiment_type;")

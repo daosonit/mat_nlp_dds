@@ -30,7 +30,7 @@ class WordsTraining(Base):
     )
     comment = Column(Text, nullable=False)
     label = Column(
-        Enum(SentimentType, name="sentiment_type", schema="cars"), nullable=False
+        Enum(SentimentType, name="sentiment_type"), nullable=False
     )
     score = Column(Float, nullable=True)
     segmented_text = Column(Text, nullable=True)

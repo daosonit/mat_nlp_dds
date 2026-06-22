@@ -21,7 +21,7 @@ AsyncSessionLocal = async_sessionmaker(
     engine, class_=AsyncSession, expire_on_commit=False
 )
 
-metadata = MetaData(schema="cars")
+metadata = MetaData()
 Base = declarative_base(metadata=metadata)
 
 

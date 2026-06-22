@@ -132,6 +132,7 @@ class ModelRouter:
                         "model_used": item["strategy"].name,
                         "is_teencode": item["is_tc"],
                     },
+                    "client_id": item["payload"].get("client_id"),
                     "status": "success",
                 }
             )

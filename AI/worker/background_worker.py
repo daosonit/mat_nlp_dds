@@ -59,18 +59,18 @@ async def start_rabbitmq_worker(model_router: ModelRouter):
                     try:
                         await db.executemany(
                             """
-                            INSERT INTO cars.words_training 
+                            INSERT INTO public.words_training 
                             (id, comment, label, score, segmented_text, model_used) 
-                            VALUES ($1, $2, $3::cars.sentiment_type, $4, $5, $6)
+                            VALUES ($1, $2, $3::public.sentiment_type, $4, $5, $6)
                             """,
                             db_args,
                         )
                         logger.info(
-                            f"Đã lưu {len(db_args)} bản ghi vào bảng cars.words_training"
+                            f"Đã lưu {len(db_args)} bản ghi vào bảng public.words_training"
                         )
                     except Exception as db_err:
                         logger.error(
-                            f"Lỗi khi insert vào cars.words_training: {db_err}"
+                            f"Lỗi khi insert vào public.words_training: {db_err}"
                         )
 
             # Chạy lưu DB ở background, không block

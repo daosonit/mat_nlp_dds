@@ -60,8 +60,6 @@ def run_migrations_offline() -> None:
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
-        include_schemas=True,
-        version_table_schema="cars",
     )
 
     with context.begin_transaction():
@@ -69,8 +67,6 @@ def run_migrations_offline() -> None:
 
 
 def include_object(object, name, type_, reflected, compare_to):
-    if type_ == "table" and object.schema != "cars":
-        return False
     return True
 
 
@@ -86,8 +82,6 @@ def run_migrations_online() -> None:
         context.configure(
             connection=connection,
             target_metadata=target_metadata,
-            include_schemas=True,
-            version_table_schema="cars",
             include_object=include_object,
         )
 
