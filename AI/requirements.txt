@@ -1,0 +1,16 @@
+aio-pika==9.6.2
+asyncpg==0.31.0
+datasets==5.0.0
+fasttext==0.9.3
+numpy==2.4.6
+py_vncorenlp==0.1.4
+python-dotenv==1.2.2
+scikit-learn==1.9.0
+
+tqdm==4.68.3
+transformers==5.12.1
+accelerate>=1.1.0
+
+# Tokenizers required for PhoBERT and ViSoBERT
+sentencepiece==0.2.1
+tiktoken==0.12.0

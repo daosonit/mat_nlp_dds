@@ -1,0 +1,4002 @@
+[
+    {
+        "text": "tầm 600 củ thì nên múc cx5 hông mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "máy tucson yếu qá, vượt xe khác ko nổi",
+        "label": "negative"
+    },
+    {
+        "text": "sedona chạy bốc quá, không chê vào đâu đk",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành xpander {tệ} qa, k bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định chốt morning là chuẩn bài, ngon qá hihi",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} raize cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất fadil nhìn {phèn} quá, hông đẹp như quảng cáo :v",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt vf8 chạy sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "vios thay nhớt loại j thì tốt hả mọi người :v",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em cx8 bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "xế innova này tiết kiệm xăng wa, ngon rồi",
+        "label": "positive"
+    },
+    {
+        "text": "vinfast vf5 thay nhớt loại zì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất santafe nhìn {phèn} wa, k xuất sắc như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền con mazda 3, đỉnh hông tả được",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 altis này hao xăng wa, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "creta chại ồn qúa, chán k chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất everest nhìn {phèn} qá, kh đẹp như quảng cáo =))",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy fortuner, cần chú ý zì khum mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt veloz mà lỗi nhiều quá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "máy seltos yếu qúa, vượt xế khác khum nổi nha",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên accent nhìu qa, xài ko hết",
+        "label": "positive"
+    },
+    {
+        "text": "xế i10 này chạy ngon quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em carnival bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "vf9 chạy ồn quá, tởm ko chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy innova, cần chú ý zì hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho vf8 k các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại cerato cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi k3 thiệt hại ntn, em thích qa rùi vãi",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua con carnival, xuất sắc hông tả được ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt carnival mà lỗi nhìu qá, phèn hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt city chại sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "vf9 chạy ồn quá, tệ không chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất everest nhìn {phèn} wa, không đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mới múc crv chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "vios đi đầm chắc, cách âm ngon choét k các bác :v",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền con fadil, xuất sắc khum tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho veloz ko các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} innova cũ đời 2019, giá bao nhiêu thì hợp lý nha",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên i10 nhìu qa, xài không hết =))",
+        "label": "positive"
+    },
+    {
+        "text": "crv đi hay hỏng vặt qá, bít thế kh xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} civic cũ đời 2019, rổ giá bao nhiêu thì hợp lý ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "veloz chạy ồn qúa, chán không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "máy cx5 yếu wa, vượt zợ 2 khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất civic xuất sắc quá, thít cực kì kk",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy cx8, cần chú ý gì khum mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "zợ 2 veloz này hao xăng qa, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "đi fadil mà ù tai quá, cách âm không đk tốt vãi",
+        "label": "negative"
+    },
+    {
+        "text": "vf8 thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định chốt innova là chuẩn bài, ngon wa",
+        "label": "positive"
+    },
+    {
+        "text": "máy mazda 3 yếu qá, vượt xe khác hông nổi",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất fortuner nhìn {phèn} qa, khum đỉnh như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi cx8 rổ giá ntn, em thít qá zồi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh thiệt hại về tucson với ạ kk",
+        "label": "neutral"
+    },
+    {
+        "text": "vinfast vf5 chạy bốc qúa, khum chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy tucson, cần chú ý giề không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy civic, cần chú ý j kh mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "xe veloz này tiết kiệm xăng qa, ngon r kk",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất vios nhìn {phèn} qa, không xuất sắc như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành innova {tệ} qá, k bao giờ xuống tiền lại",
+        "label": "negative"
+    },
+    {
+        "text": "fadil chạy ồn quá, chán hong chịu được :v",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} vinfast vf5 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa creta ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "fortuner đi hay hỏng vặt qá, bít thế không chốt",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chại xpander cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy everest, cần chú ý giề không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình vios lag quá, xài bực mình khum chịu đk ạ",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} k3 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua con everest, xuất sắc kh tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất morning nhìn {phèn} qa, ko xuất sắc như quảng cáo kk",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho city k các bác? =))",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên sedona nhiều qá, xài kh hết",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua raize chại sướng quá mọi người ạ nha",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về carnival với ạ kk",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất cx8 đẹp vãi qúa, thích cực kì nhé",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên cerato nhìu quá, xài hong hết",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} creta cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "xe cerato này tiết kiệm xăng qa, ngon r :v",
+        "label": "positive"
+    },
+    {
+        "text": "cerato đi hay hỏng vặt qá, biết thế kh chốt kk",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng chốt cx8 nhé, chại tởm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh thiệt hại về seltos với ạ nha",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho city khum các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "cerato chạy bốc quá, hông chê vào đâu đk hihi",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt cerato mà lỗi nhiều qa, phèn hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi vf8 giá ntn, em thik qá rồi",
+        "label": "positive"
+    },
+    {
+        "text": "civic đi hay hỏng vặt quá, bít thế hong xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "xe santafe này chạy ngon choét quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành mazda 3 {tệ} qúa, k bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "máy lux a yếu qá, vượt xe khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành cx8 {tệ} qa, không bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "xe crv đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì? :v",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em carnival bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành innova {tệ} qá, không bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "camry thay nhớt loại giề thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "máy sonet yếu qa, vượt xe khác khum nổi",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên accent nhìu quá, xài khum hết",
+        "label": "positive"
+    },
+    {
+        "text": "máy camry yếu quá, vượt vk 2 khác hong nổi",
+        "label": "negative"
+    },
+    {
+        "text": "xe veloz này chạy hết nước chấm wa mọi người ơi ạ",
+        "label": "positive"
+    },
+    {
+        "text": "vf8 thay nhớt loại zì thì tốt hả mọi người nha",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất fadil nhìn {phèn} qa, ko đỉnh như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành vf8 {tệ} qa, hông bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất lux sa đỉnh wa, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 vf8 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành raize {tệ} quá, k bao giờ xuống tiền lại",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi civic giá ntn, em thích quá rồi",
+        "label": "positive"
+    },
+    {
+        "text": "i10 chại ồn wa, tệ kh chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy fortuner cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "máy seltos yếu quá, vượt xế khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy creta, cần chú ý gì hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh thiệt hại về everest với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới xuống tiền con vf8, xuất sắc k tả đk nhé",
+        "label": "positive"
+    },
+    {
+        "text": "xế tucson này hao xăng wa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "creta chại ồn qa, tệ khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "xe camry này chạy ngon wa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em fadil bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "xe fadil này chại ngon choét quá mọi người ơi vãi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên vf8 nhìu quá, xài khum hết",
+        "label": "positive"
+    },
+    {
+        "text": "creta đi hay hỏng vặt quá, bít thế hông mua",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy seltos cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất cx5 nhìn {phèn} qúa, không đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "civic chạy bốc quá, hông chê vào đâu đk",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất camry nhìn {phèn} qá, hông đẹp như quảng cáo nhé",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa city ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "vios đi đầm chắc, cách âm hết nước chấm hông các bác",
+        "label": "positive"
+    },
+    {
+        "text": "seltos chại ồn quá, tệ khum chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất fortuner đẹp quá, thích cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "đi crv mà ù tai quá, cách âm k được tốt ạ",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} crv cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa veloz ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất cx5 nhìn {phèn} qa, kh đẹp như quảng cáo hihi",
+        "label": "negative"
+    },
+    {
+        "text": "lux sa thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định mua seltos là chuẩn bài, đỉnh chóp qúa",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định múc altis là chuẩn bài, ngon choét wa",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng mua sedona nhé, chại phèn {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua fortuner nhé, chạy chán ốm {lắm} ạ",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} xpander cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} ranger cũ đời 2019, thiệt hại bao nhiêu thì hợp lý nha",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 vf9 này hao xăng qúa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "cerato thay nhớt loại gì thì tốt hả mọi người kk",
+        "label": "neutral"
+    },
+    {
+        "text": "mới xuống tiền xpander chạy sướng qa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền vf9 mà lỗi nhìu qá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy lux sa cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "xe cx5 này tiết kiệm xăng quá, ngon rùi nha",
+        "label": "positive"
+    },
+    {
+        "text": "ranger chại bốc quá, hông chê vào đâu dc",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về k3 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "xe santafe này tiết kiệm xăng quá, hết nước chấm rùi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về mazda 3 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "sedona chạy bốc quá, không chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua fadil chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 accent này chạy ngon choét qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng chốt ranger nhé, chạy chán {lắm} vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi i10 giá ntn, em thik qa r",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chại lux sa cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "máy sedona yếu quá, vượt xế khác kh nổi",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 camry đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu j? ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "i10 đi đầm chắc, cách âm ngon choét không các bác",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua cerato hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "everest chại ồn quá, tởm hông chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "i10 chại bốc quá, không chê vào đâu đc ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt mazda 3 mà lỗi nhìu qá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mới múc fadil chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em mazda 3 bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành camry {tệ} wa, không bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "tucson chại ồn qá, chán khum chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 sonet đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề?",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 vf9 này hao xăng qá, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc creta không mọi người? nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về tucson với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc cx8 mà lỗi nhiều qá, tệ hẳn :v",
+        "label": "negative"
+    },
+    {
+        "text": "xe raize này tiết kiệm xăng quá, hết nước chấm rồi",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành everest {tệ} qúa, hông bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua cerato khum mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "creta đi đầm chắc, cách âm đỉnh chóp hong các bác",
+        "label": "positive"
+    },
+    {
+        "text": "xế carnival này tiết kiệm xăng qúa, ngon rùi kk",
+        "label": "positive"
+    },
+    {
+        "text": "vios thay nhớt loại j thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "fadil đi đầm chắc, cách âm ngon choét kh các bác =))",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} camry cũ đời 2019, giá bao nhiêu thì hợp lý ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh thiệt hại về morning với ạ =))",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất vf8 nhìn {phèn} quá, khum đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "xe morning này hao xăng qá, phẩy làm sao đây mọi người vãi",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình i10 lag wa, xài bực mình không chịu được hihi",
+        "label": "negative"
+    },
+    {
+        "text": "mới múc con raize, đẹp vãi khum tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành veloz {tệ} wa, không bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi crv thiệt hại ntn, em thick quá rồi",
+        "label": "positive"
+    },
+    {
+        "text": "civic thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất vinfast vf5 đẹp vãi qa, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "veloz chạy ồn qa, chán không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy innova cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vios này tiết kiệm xăng qa, ngon rùi",
+        "label": "positive"
+    },
+    {
+        "text": "cx5 chại ồn qá, chán không chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình cx5 lag qa, xài bực mình kh chịu được ạ",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 morning đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề",
+        "label": "neutral"
+    },
+    {
+        "text": "seltos đi hay hỏng vặt qúa, bít thế kh mua",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng chốt innova nhé, chại chán {lắm} nhé",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành creta {tệ} qa, khum bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa altis ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất accent đẹp vãi wa, thik cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua carnival kh mọi người? hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "đi fadil mà ù tai qúa, cách âm hông được tốt",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho sedona không các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa innova ở hà nội hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc sonet chạy sướng qá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "sedona thay nhớt loại j thì tốt hả mọi người kk",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất creta nhìn {phèn} qá, hông đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành sedona {tệ} wa, hông bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 seltos này tiết kiệm xăng qúa, đỉnh chóp rùi =))",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc sedona hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "máy carnival yếu quá, vượt xe khác không nổi :v",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về ranger với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa vinfast vf5 ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "santafe đi hay hỏng vặt quá, bít thế hông múc",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy innova, cần chú ý gì k mọi người kk",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy altis, cần chú ý j không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vios này hao xăng qá, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất seltos đẹp wa, thick cực kì :v",
+        "label": "positive"
+    },
+    {
+        "text": "xế lux sa này chại ngon quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy lux sa, cần chú ý gì k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới xuống tiền cx8 chại sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mazda 3 chại ồn quá, tởm k chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua vf9 hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "k3 đi đầm chắc, cách âm hết nước chấm không các bác",
+        "label": "positive"
+    },
+    {
+        "text": "seltos chạy bốc qa, ko chê vào đâu đk",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy seltos, cần chú ý j không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho cerato không các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "xe fortuner này tiết kiệm xăng qúa, hết nước chấm rồi vãi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên i10 nhìu quá, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "everest thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "xpander chạy ồn qúa, chán không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "carnival chạy bốc quá, không chê vào đâu đk",
+        "label": "positive"
+    },
+    {
+        "text": "crv chại bốc wa, hong chê vào đâu dc",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} vinfast vf5 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "everest chạy bốc quá, không chê vào đâu đk =))",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 everest này tiết kiệm xăng quá, ngon r nha",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} everest cũ đời 2019, rổ giá bao nhiêu thì hợp lý ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho santafe khum các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho crv không các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định mua innova là chuẩn bài, hết nước chấm wa nha",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy vf8, cần chú ý j kh mọi người =))",
+        "label": "neutral"
+    },
+    {
+        "text": "xế xpander này chạy đỉnh chóp qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "civic chạy bốc qa, k chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên chốt accent không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình creta lag qa, xài bực mình kh chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi vios thiệt hại ntn, em thít qá rồi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên k3 nhiều quá, xài hong hết",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 mazda 3 này chạy hết nước chấm quá mọi người ơi :v",
+        "label": "positive"
+    },
+    {
+        "text": "xế cx5 này tiết kiệm xăng wa, ngon choét r",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng múc i10 nhé, chạy tệ {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên santafe nhiều qá, xài hông hết",
+        "label": "positive"
+    },
+    {
+        "text": "everest đi đầm chắc, cách âm ngon choét k các bác vãi",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa accent ở Hà Nội nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "lux a đi hay hỏng vặt wa, bít thế kh mua vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng xuống tiền accent nhé, chạy phèn {lắm} =))",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất sonet nhìn {phèn} wa, k đẹp như quảng cáo =))",
+        "label": "negative"
+    },
+    {
+        "text": "mới múc sedona chạy sướng qá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng múc sonet nhé, chạy chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua crv nhé, chại tệ {lắm} vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về creta với ạ kk",
+        "label": "neutral"
+    },
+    {
+        "text": "xe sonet này hao xăng qúa, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc raize khum mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "xe cx8 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì?",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình seltos lag quá, xài bực mình không chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "xế sonet đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho fortuner ko các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt con k3, đẹp kh tả đk",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em creta bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi city giá ntn, em thick qá zồi",
+        "label": "positive"
+    },
+    {
+        "text": "xe carnival đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em altis bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc con mazda 3, đẹp khum tả đk nhé",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành sedona {tệ} qa, khum bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 vinfast vf5 này tiết kiệm xăng quá, ngon rùi",
+        "label": "positive"
+    },
+    {
+        "text": "xe cx8 này chại hết nước chấm qa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em civic bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy altis, cần chú ý gì hong mọi người =))",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi sedona rổ giá ntn, em thick qúa zồi ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt santafe mà lỗi nhìu qa, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua tucson k mọi người? kk",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi raize rổ giá ntn, em thít qúa rồi",
+        "label": "positive"
+    },
+    {
+        "text": "city đi hay hỏng vặt qá, biết thế không múc",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định múc mazda 3 là chuẩn bài, ngon quá",
+        "label": "positive"
+    },
+    {
+        "text": "tucson chạy bốc qá, khum chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 fortuner này tiết kiệm xăng quá, đỉnh chóp rồi :v",
+        "label": "positive"
+    },
+    {
+        "text": "carnival đi hay hỏng vặt quá, biếc thế hong xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua santafe mà lỗi nhìu wa, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua con k3, đẹp hong tả được",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em civic bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất city nhìn {phèn} quá, hông đẹp như quảng cáo hihi",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} innova cũ đời 2019, giá bao nhiêu thì hợp lý =))",
+        "label": "neutral"
+    },
+    {
+        "text": "mazda 3 chạy bốc qa, không chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa altis ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} fortuner cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} cerato cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "xe fortuner đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành tucson {tệ} qa, ko bao giờ xuống tiền lại vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua lux a nhé, chạy phèn {lắm} hihi",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên k3 nhìu qúa, xài khum hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em hỏi cx8 giá ntn, em thick quá zồi",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy cx5, cần chú ý gì ko mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em fortuner bản tiêu chuẩn hay cao cấp =))",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vf9 này chạy ngon quá mọi người ơi :v",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa k3 ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "xế lux a này chại ngon wa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "city đi hay hỏng vặt quá, biếc thế k chốt",
+        "label": "negative"
+    },
+    {
+        "text": "đi everest mà ù tai qúa, cách âm không dc tốt",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 vf8 này chạy ngon qa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "xe lux a đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu j? nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho morning ko các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "camry thay nhớt loại giề thì tốt hả mọi người :v",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên chốt cx8 hong mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng mua cx5 nhé, chạy chán ốm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua con seltos, xuất sắc k tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất everest nhìn {phèn} quá, không đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh thiệt hại về camry với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua fortuner hong mọi người? vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình morning lag wa, xài bực mình hong chịu được hihi",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền vf8 mà lỗi nhìu wa, chán hẳn nha",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho creta hong các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền cx8 là chuẩn bài, đỉnh chóp qá",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình carnival lag wa, xài bực mình kh chịu đk kk",
+        "label": "negative"
+    },
+    {
+        "text": "innova chại ồn qa, chán khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa cerato ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "xe cx8 này chạy đỉnh chóp quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 vf9 này tiết kiệm xăng quá, ngon r",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 cx8 này tiết kiệm xăng quá, ngon r nhé",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy seltos cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "đi fadil mà ù tai quá, cách âm khum được tốt :v",
+        "label": "negative"
+    },
+    {
+        "text": "tucson đi đầm chắc, cách âm ngon k các bác",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình lux a lag qúa, xài bực mình không chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 k3 này chạy đỉnh chóp qá mọi người ơi hihi",
+        "label": "positive"
+    },
+    {
+        "text": "máy vf8 yếu qa, vượt xế khác ko nổi",
+        "label": "negative"
+    },
+    {
+        "text": "vf8 đi đầm chắc, cách âm ngon k các bác",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua con crv, đỉnh hông tả được",
+        "label": "positive"
+    },
+    {
+        "text": "tucson chạy ồn quá, tởm ko chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "xe cerato này hao xăng qúa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "vios chại ồn wa, chán khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa cx5 ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "vf8 chại ồn quá, tệ kh chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "xe morning này hao xăng qúa, phải làm sao đây mọi người nhé",
+        "label": "negative"
+    },
+    {
+        "text": "xế cx5 này chạy hết nước chấm quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy tucson cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy xpander, cần chú ý gì không mọi người :v",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về santafe với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên cx8 nhìu quá, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc vf8 không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "sedona thay nhớt loại j thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi cx5 thiệt hại ntn, em thít qa r",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy i10 cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình ranger lag qá, xài bực mình hong chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "fadil chại bốc qúa, khum chê vào đâu đk nha",
+        "label": "positive"
+    },
+    {
+        "text": "máy lux sa yếu wa, vượt xế khác ko nổi",
+        "label": "negative"
+    },
+    {
+        "text": "carnival chạy bốc quá, hông chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "sonet chạy ồn qúa, chán không chịu đk nha",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua veloz hong mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc con vf9, đẹp vãi không tả đk :v",
+        "label": "positive"
+    },
+    {
+        "text": "i10 chại bốc quá, kh chê vào đâu đk nhé",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định xuống tiền camry là chuẩn bài, ngon qá",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất city đỉnh quá, thik cực kì nhé",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên crv nhiều wa, xài không hết kk",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc con altis, xuất sắc k tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng chốt cx5 nhé, chại chán {lắm} =))",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 creta này hao xăng quá, phải làm sao đây mọi người nhé",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định xuống tiền cx5 là chuẩn bài, hết nước chấm qá",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chại carnival cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em i10 bản tiêu chuẩn hay cao cấp hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy fadil, cần chú ý giề kh mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "veloz chại ồn qa, chán ốm không chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi fadil rổ giá ntn, em thích quá zồi",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho cerato k các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình city lag quá, xài bực mình hong chịu đc vãi",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành lux a {tệ} qúa, hông bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình innova lag qa, xài bực mình không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về altis với ạ nha",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua altis chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh thiệt hại về i10 với ạ vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại carnival cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "đi lux a mà ù tai qá, cách âm không dc tốt",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi santafe rổ giá ntn, em thik qúa zồi",
+        "label": "positive"
+    },
+    {
+        "text": "xe lux sa đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi raize giá ntn, em thích quá rùi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên fortuner nhìu qúa, xài khum hết nha",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua lux sa ko mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên accent nhìu qá, xài ko hết ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua xpander chại sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình vf9 lag qa, xài bực mình ko chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh rổ giá về fadil với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa veloz ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "morning đi hay hỏng vặt wa, biết thế không xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "cx8 chại bốc qá, k chê vào đâu dc hihi",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 xpander này chại ngon choét qá mọi người ơi nha",
+        "label": "positive"
+    },
+    {
+        "text": "xe city này chạy đỉnh chóp quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc civic mà lỗi nhìu qúa, tệ hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền creta mà lỗi nhìu qa, phèn hẳn vãi",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} sonet cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình cerato lag qúa, xài bực mình khum chịu đk vãi",
+        "label": "negative"
+    },
+    {
+        "text": "vf9 đi đầm chắc, cách âm hết nước chấm kh các bác",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên xuống tiền crv không mọi người? :v",
+        "label": "neutral"
+    },
+    {
+        "text": "veloz thay nhớt loại gì thì tốt hả mọi người vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định chốt cerato là chuẩn bài, ngon choét qá nhé",
+        "label": "positive"
+    },
+    {
+        "text": "máy seltos yếu wa, vượt xe khác k nổi kk",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi lux sa giá ntn, em thích wa rồi",
+        "label": "positive"
+    },
+    {
+        "text": "altis thay nhớt loại giề thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em altis bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt con ranger, đẹp vãi không tả đk hihi",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền seltos chạy sướng qá mọi người ạ nha",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định múc fadil là chuẩn bài, ngon choét qúa",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên tucson nhiều quá, xài hông hết",
+        "label": "positive"
+    },
+    {
+        "text": "máy sedona yếu qá, vượt xế khác hong nổi ạ",
+        "label": "negative"
+    },
+    {
+        "text": "máy crv yếu quá, vượt vk 2 khác k nổi nhé",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi cx5 giá ntn, em thik qúa rồi ạ",
+        "label": "positive"
+    },
+    {
+        "text": "innova thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua con cx8, đẹp vãi không tả đc vãi",
+        "label": "positive"
+    },
+    {
+        "text": "sedona đi đầm chắc, cách âm hết nước chấm k các bác",
+        "label": "positive"
+    },
+    {
+        "text": "vf9 đi hay hỏng vặt wa, biếc thế hông xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho i10 hông các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vios này hao xăng qá, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định mua city là chuẩn bài, hết nước chấm quá :v",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} sedona cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất fortuner đẹp vãi wa, thích cực kì nha",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} civic cũ đời 2019, rổ giá bao nhiêu thì hợp lý kk",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định chốt tucson là chuẩn bài, ngon choét qá nha",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên accent nhiều qá, xài khum hết hihi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất morning đẹp quá, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 everest đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì?",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định chốt santafe là chuẩn bài, ngon qá",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định mua vios là chuẩn bài, đỉnh chóp qá vãi",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho camry không các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc mazda 3 mà lỗi nhìu qúa, phèn hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình lux sa lag qa, xài bực mình kh chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 lux a đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi lux sa giá ntn, em thick qá r",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc tucson mà lỗi nhìu wa, phèn hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy veloz cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "đi vios mà ù tai qá, cách âm không đc tốt",
+        "label": "negative"
+    },
+    {
+        "text": "máy santafe yếu wa, vượt xế khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất sonet xuất sắc qa, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho veloz không các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho everest hong các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất santafe nhìn {phèn} qúa, hong đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh giá về i10 với ạ vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về altis với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới xuống tiền con lux a, đỉnh hong tả đc kk",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 k3 này chạy ngon choét qa mọi người ơi hihi",
+        "label": "positive"
+    },
+    {
+        "text": "xe lux a này chạy hết nước chấm qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "xe raize này tiết kiệm xăng qá, hết nước chấm zồi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên sedona nhìu quá, xài kh hết",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình accent lag quá, xài bực mình không chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "innova chạy bốc qúa, ko chê vào đâu dc ạ",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy fadil, cần chú ý giề không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại vf8 cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vinfast vf5 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa seltos ở hà nội hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em carnival bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "màn hình creta lag wa, xài bực mình ko chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "xế morning đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em altis bản tiêu chuẩn hay cao cấp nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất veloz nhìn {phèn} quá, ko đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 sedona đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy lux sa, cần chú ý gì không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mazda 3 chạy ồn qúa, phèn kh chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất sonet nhìn {phèn} wa, không đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "máy vios yếu qa, vượt vk 2 khác hong nổi",
+        "label": "negative"
+    },
+    {
+        "text": "xe civic này hao xăng wa, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em everest bản tiêu chuẩn hay cao cấp ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng chốt veloz nhé, chạy phèn {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền cx5 chạy sướng quá mọi người ạ =))",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất creta xuất sắc quá, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho k3 k các bác? :v",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy ranger cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi seltos rổ giá ntn, em thik quá r hihi",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa carnival ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa camry ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên creta nhìu quá, xài ko hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về accent với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua con santafe, đẹp kh tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "xpander đi đầm chắc, cách âm ngon hong các bác",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 k3 này hao xăng wa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi creta giá ntn, em thick wa zồi",
+        "label": "positive"
+    },
+    {
+        "text": "máy sonet yếu qúa, vượt xe khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi city giá ntn, em thick wa rồi",
+        "label": "positive"
+    },
+    {
+        "text": "vf8 chạy ồn wa, chán ko chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chại cx8 cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc con mazda 3, đẹp không tả đk",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc raize mà lỗi nhìu qá, phèn hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em seltos bản tiêu chuẩn hay cao cấp nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành k3 {tệ} quá, kh bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "vf8 chạy ồn wa, tởm khum chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành lux sa {tệ} qá, ko bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "xe vinfast vf5 này hao xăng quá, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "k3 thay nhớt loại zì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng múc lux a nhé, chại tởm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất ranger đẹp qa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất cx5 đỉnh quá, thik cực kì :v",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng xuống tiền xpander nhé, chạy tệ {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chại cerato cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa fadil ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành sonet {tệ} wa, hong bao giờ mua lại =))",
+        "label": "negative"
+    },
+    {
+        "text": "accent đi hay hỏng vặt qá, bít thế không mua =))",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} innova cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi seltos giá ntn, em thích quá rồi nhé",
+        "label": "positive"
+    },
+    {
+        "text": "fadil chại bốc quá, hông chê vào đâu đk",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành santafe {tệ} qa, không bao giờ xuống tiền lại",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất lux a nhìn {phèn} qa, hong đẹp vãi như quảng cáo =))",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi raize thiệt hại ntn, em thick quá zồi",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} morning cũ đời 2019, giá bao nhiêu thì hợp lý :v",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua raize mà lỗi nhìu qúa, chán ốm hẳn kk",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt con veloz, đẹp không tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa tucson ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy k3, cần chú ý giề kh mọi người vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền lux sa là chuẩn bài, ngon choét qúa",
+        "label": "positive"
+    },
+    {
+        "text": "xế vf9 này tiết kiệm xăng quá, hết nước chấm rùi vãi",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định xuống tiền creta là chuẩn bài, ngon qá",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên cx5 nhiều wa, xài k hết",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành santafe {tệ} qá, k bao giờ mua lại :v",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc fadil k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "sonet chạy ồn qá, tệ hong chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "everest thay nhớt loại gì thì tốt hả mọi người nha",
+        "label": "neutral"
+    },
+    {
+        "text": "xe camry này hao xăng qúa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "lux a đi đầm chắc, cách âm ngon ko các bác",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh thiệt hại về lux a với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên civic nhìu qa, xài kh hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em i10 bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "cx8 chạy bốc quá, hong chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy seltos, cần chú ý gì k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa camry ở hà nội hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} camry cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy lux sa, cần chú ý giề k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "altis đi hay hỏng vặt wa, biếc thế không xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh rổ giá về i10 với ạ nha",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành veloz {tệ} qúa, hông bao giờ mua lại kk",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy lux sa, cần chú ý j không mọi người ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua innova không mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "mới xuống tiền civic mà lỗi nhìu quá, chán hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "máy sedona yếu qa, vượt zợ 2 khác hong nổi",
+        "label": "negative"
+    },
+    {
+        "text": "mới múc xpander mà lỗi nhìu wa, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "everest đi hay hỏng vặt qá, biết thế hông mua",
+        "label": "negative"
+    },
+    {
+        "text": "xe lux sa này chạy ngon wa mọi người ơi kk",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua con cerato, đỉnh ko tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "máy cx5 yếu quá, vượt xe khác không nổi nhé",
+        "label": "negative"
+    },
+    {
+        "text": "lux a đi hay hỏng vặt quá, biết thế khum mua nhé",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về veloz với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa sedona ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành everest {tệ} qúa, k bao giờ chốt lại ạ",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy vf9 cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng múc city nhé, chạy chán {lắm} :v",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa raize ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định múc civic là chuẩn bài, ngon wa hihi",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình cx5 lag wa, xài bực mình không chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên mazda 3 nhìu wa, xài ko hết",
+        "label": "positive"
+    },
+    {
+        "text": "sedona đi đầm chắc, cách âm ngon khum các bác",
+        "label": "positive"
+    },
+    {
+        "text": "lux a chại bốc quá, không chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "fortuner đi hay hỏng vặt quá, bít thế k mua",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa ranger ở hà nội nha",
+        "label": "neutral"
+    },
+    {
+        "text": "xe vf8 này chạy ngon wa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất vinfast vf5 nhìn {phèn} qa, kh đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình altis lag qa, xài bực mình không chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "everest đi đầm chắc, cách âm đỉnh chóp hông các bác =))",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng chốt raize nhé, chạy chán {lắm} :v",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa altis ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên xuống tiền city ko mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "k3 chại bốc qa, k chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định mua everest là chuẩn bài, đỉnh chóp qúa",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền con creta, đẹp không tả đk ạ",
+        "label": "positive"
+    },
+    {
+        "text": "xe carnival này chạy ngon wa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "raize đi hay hỏng vặt qa, biếc thế không chốt",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 carnival này chạy đỉnh chóp qá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua cx8 mà lỗi nhìu quá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về veloz với ạ nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho tucson k các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi sedona giá ntn, em thick qá rùi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất creta nhìn {phèn} wa, ko đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "morning chại ồn qúa, phèn hong chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "vinfast vf5 đi đầm chắc, cách âm đỉnh chóp khum các bác",
+        "label": "positive"
+    },
+    {
+        "text": "accent chạy bốc qa, hông chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua k3 mà lỗi nhiều qá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "tầm 600 củ thì nên chốt crv kh mọi người? ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về cx5 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên innova nhìu qá, xài hông hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng chốt vios nhé, chạy chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy tucson cho em xin ít review =))",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em accent bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em xin đánh rổ giá về tucson với ạ =))",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền altis là chuẩn bài, ngon wa",
+        "label": "positive"
+    },
+    {
+        "text": "cerato đi hay hỏng vặt qá, biết thế khum múc vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em everest bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "santafe thay nhớt loại gì thì tốt hả mọi người hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành vinfast vf5 {tệ} wa, hong bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "xe mazda 3 này hao xăng quá, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành tucson {tệ} quá, không bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa carnival ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "zợ 2 lux a này hao xăng qúa, phải làm sao đây mọi người ạ",
+        "label": "negative"
+    },
+    {
+        "text": "innova đi hay hỏng vặt quá, biết thế hong mua :v",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy ranger, cần chú ý gì không mọi người nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "accent chạy bốc quá, kh chê vào đâu được kk",
+        "label": "positive"
+    },
+    {
+        "text": "xe city này chạy hết nước chấm qá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "sedona chạy bốc wa, k chê vào đâu dc",
+        "label": "positive"
+    },
+    {
+        "text": "cx8 đi hay hỏng vặt wa, biết thế không xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về vinfast vf5 với ạ vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "sedona đi hay hỏng vặt wa, biếc thế khum chốt",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} seltos cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "xế raize này hao xăng qá, fai làm sao đây mọi người :v",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh thiệt hại về fortuner với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt xpander chại sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "đi sonet mà ù tai wa, cách âm không đk tốt",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} city cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng múc ranger nhé, chại chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên camry nhìu wa, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất i10 xuất sắc wa, thik cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất vinfast vf5 nhìn {phèn} qúa, kh đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "cerato chạy bốc quá, ko chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho vf9 kh các bác? nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "zợ 2 santafe này hao xăng wa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 city đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề",
+        "label": "neutral"
+    },
+    {
+        "text": "xe k3 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề? kk",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại carnival cho em xin ít review :v",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi camry thiệt hại ntn, em thik wa rùi",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền con i10, đỉnh hông tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho vf9 kh các bác? ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại santafe cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "đi innova mà ù tai qa, cách âm không được tốt hihi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh giá về vios với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng mua tucson nhé, chạy chán {lắm} nhé",
+        "label": "negative"
+    },
+    {
+        "text": "xe cerato này chạy đỉnh chóp wa mọi người ơi vãi",
+        "label": "positive"
+    },
+    {
+        "text": "xe ranger đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì?",
+        "label": "neutral"
+    },
+    {
+        "text": "xpander chại ồn qa, tởm hông chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa tucson ở Hà Nội vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc crv mà lỗi nhìu qa, chán hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt cx8 chạy sướng qa mọi người ạ =))",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 raize này chại ngon qa mọi người ơi hihi",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy crv, cần chú ý j hông mọi người vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất cerato đẹp wa, thích cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chại santafe cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất ranger nhìn {phèn} wa, hong đẹp như quảng cáo hihi",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy xpander, cần chú ý zì không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua con altis, đẹp hông tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc creta chại sướng qúa mọi người ạ hihi",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình vinfast vf5 lag quá, xài bực mình hông chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "xe carnival này hao xăng wa, phẩy làm sao đây mọi người nhé",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất creta nhìn {phèn} quá, không đỉnh như quảng cáo :v",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} city cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc sedona mà lỗi nhiều qá, tệ hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền altis mà lỗi nhìu qúa, chán ốm hẳn =))",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em cx8 bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa fortuner ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "creta chạy bốc qa, không chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng múc carnival nhé, chại chán ốm {lắm} vãi",
+        "label": "negative"
+    },
+    {
+        "text": "everest chại ồn qá, chán không chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "xe cerato đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì?",
+        "label": "neutral"
+    },
+    {
+        "text": "đi altis mà ù tai wa, cách âm không đk tốt",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 camry này hao xăng qá, phải làm sao đây mọi người =))",
+        "label": "negative"
+    },
+    {
+        "text": "raize chạy ồn quá, chán kh chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên veloz nhìu qá, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua mazda 3 mà lỗi nhìu qa, chán hẳn hihi",
+        "label": "negative"
+    },
+    {
+        "text": "xpander thay nhớt loại j thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho morning khum các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em everest bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua cx5 chạy sướng qúa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt creta chại sướng qá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về innova với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "xe altis này chạy ngon qá mọi người ơi nha",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh rổ giá về creta với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "civic đi đầm chắc, cách âm hết nước chấm hong các bác kk",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua crv chạy sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "đi i10 mà ù tai quá, cách âm không đk tốt",
+        "label": "negative"
+    },
+    {
+        "text": "santafe chạy bốc quá, kh chê vào đâu được =))",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} vf9 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "altis chạy ồn quá, chán hông chịu dc kk",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất accent nhìn {phèn} qa, ko đẹp như quảng cáo =))",
+        "label": "negative"
+    },
+    {
+        "text": "sedona đi đầm chắc, cách âm ngon khum các bác",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} fortuner cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy raize, cần chú ý j khum mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "xe everest này hao xăng wa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "bác nào đang chạy lux a cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "i10 đi hay hỏng vặt wa, bít thế k múc :v",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 k3 này hao xăng quá, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "cx5 chạy bốc qúa, không chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 morning này tiết kiệm xăng quá, đỉnh chóp zồi ạ",
+        "label": "positive"
+    },
+    {
+        "text": "morning thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt carnival chại sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mazda 3 đi đầm chắc, cách âm hết nước chấm khum các bác",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy raize, cần chú ý j kh mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "máy innova yếu qa, vượt xe khác khum nổi",
+        "label": "negative"
+    },
+    {
+        "text": "cx5 chại bốc qa, hông chê vào đâu được nha",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua tucson hông mọi người? kk",
+        "label": "neutral"
+    },
+    {
+        "text": "xế ranger này hao xăng qúa, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua vinfast vf5 chạy sướng qá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy k3, cần chú ý j k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên camry nhiều qúa, xài không hết nha",
+        "label": "positive"
+    },
+    {
+        "text": "máy carnival yếu qá, vượt zợ 2 khác k nổi",
+        "label": "negative"
+    },
+    {
+        "text": "vf8 chạy bốc wa, không chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "xe civic này hao xăng quá, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua altis nhé, chại chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình mazda 3 lag qúa, xài bực mình không chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "xe accent đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề?",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy vios cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng chốt ranger nhé, chạy chán ốm {lắm} vãi",
+        "label": "negative"
+    },
+    {
+        "text": "xe accent này chại đỉnh chóp qúa mọi người ơi nha",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất tucson nhìn {phèn} quá, ko xuất sắc như quảng cáo nha",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa vinfast vf5 ở Hà Nội nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa carnival ở Hà Nội vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành vios {tệ} quá, không bao giờ xuống tiền lại =))",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa vios ở hà nội nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy cx8 cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất vf9 nhìn {phèn} quá, ko đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "mazda 3 đi hay hỏng vặt qa, biết thế hông xuống tiền nha",
+        "label": "negative"
+    },
+    {
+        "text": "xế cerato đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu j?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi lux a giá ntn, em thik qa zồi nhé",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua cx8 không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất cerato đỉnh qúa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc fadil khum mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em accent bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} cx5 cũ đời 2019, giá bao nhiêu thì hợp lý ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành seltos {tệ} quá, ko bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành sonet {tệ} qa, hong bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho tucson không các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em lux sa bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} cerato cũ đời 2019, giá bao nhiêu thì hợp lý ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất accent nhìn {phèn} quá, hông đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình lux a lag quá, xài bực mình không chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "santafe chại ồn qúa, tệ khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành lux sa {tệ} quá, khum bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} vinfast vf5 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về city với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt city mà lỗi nhiều quá, tởm hẳn =))",
+        "label": "negative"
+    },
+    {
+        "text": "zợ 2 xpander đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "zợ 2 carnival này chại đỉnh chóp qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} vf9 cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng xuống tiền tucson nhé, chạy chán ốm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho mazda 3 hong các bác? :v",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy altis, cần chú ý giề ko mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "ranger chại ồn qúa, chán không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi everest giá ntn, em thích qa r",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em city bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "đi accent mà ù tai quá, cách âm hông được tốt",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh giá về k3 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt k3 chạy sướng qa mọi người ạ :v",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định múc cx8 là chuẩn bài, ngon quá hihi",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho tucson k các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng chốt vf9 nhé, chạy tởm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy everest, cần chú ý gì không mọi người nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc con civic, đẹp vãi khum tả đk",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua con mazda 3, đẹp khum tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "vf8 thay nhớt loại zì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất mazda 3 nhìn {phèn} wa, hông đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "xe vios này tiết kiệm xăng quá, hết nước chấm zồi",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc fortuner không mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định mua innova là chuẩn bài, ngon qa",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất seltos đẹp qúa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua altis không mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên tucson nhiều quá, xài hong hết",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy lux a, cần chú ý zì ko mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất carnival đẹp qá, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "carnival chạy ồn quá, tởm không chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất city đỉnh quá, thik cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "lux a chại bốc qúa, không chê vào đâu đc",
+        "label": "positive"
+    },
+    {
+        "text": "xe vf9 này tiết kiệm xăng quá, hết nước chấm rùi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất lux a đẹp vãi qa, thích cực kì vãi",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền k3 mà lỗi nhìu wa, tệ hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định mua accent là chuẩn bài, ngon choét qúa",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên cx5 nhìu qa, xài hông hết vãi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em raize bản tiêu chuẩn hay cao cấp ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho sonet hông các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền xpander là chuẩn bài, ngon qá",
+        "label": "positive"
+    },
+    {
+        "text": "xe fortuner này chại ngon quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chại cx5 cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "creta chại ồn qá, chán ko chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "đi raize mà ù tai qúa, cách âm không đc tốt :v",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình vinfast vf5 lag quá, xài bực mình không chịu đc",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình lux sa lag qá, xài bực mình ko chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 seltos này tiết kiệm xăng quá, hết nước chấm zồi",
+        "label": "positive"
+    },
+    {
+        "text": "xe santafe này hao xăng quá, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất sedona đẹp quá, thik cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành carnival {tệ} quá, kh bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định múc lux a là chuẩn bài, ngon wa",
+        "label": "positive"
+    },
+    {
+        "text": "xế k3 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu j",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} ranger cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} xpander cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "máy fadil yếu qa, vượt xe khác không nổi",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên morning nhiều qúa, xài hông hết",
+        "label": "positive"
+    },
+    {
+        "text": "có nên phủ ceramic cho xpander hong các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 carnival này tiết kiệm xăng wa, ngon rồi",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc fadil chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "camry chạy bốc qa, hông chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "cx8 thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 ranger này hao xăng qúa, phẩy làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "creta thay nhớt loại zì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "k3 đi hay hỏng vặt wa, biếc thế hong xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định múc vios là chuẩn bài, ngon qá =))",
+        "label": "positive"
+    },
+    {
+        "text": "xe seltos này chạy hết nước chấm qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em vf8 bản tiêu chuẩn hay cao cấp vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định mua vinfast vf5 là chuẩn bài, đỉnh chóp qá hihi",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa city ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em lux sa bản tiêu chuẩn hay cao cấp :v",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất altis đỉnh wa, thít cực kì nhé",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy sonet cho em xin ít review nha",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc xpander mà lỗi nhiều qúa, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất fortuner nhìn {phèn} qúa, k đỉnh như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất fortuner nhìn {phèn} quá, hông đẹp vãi như quảng cáo vãi",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền con i10, đẹp vãi không tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định múc vinfast vf5 là chuẩn bài, ngon qúa",
+        "label": "positive"
+    },
+    {
+        "text": "đi innova mà ù tai qa, cách âm hong dc tốt",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em fortuner bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy lux sa, cần chú ý gì hông mọi người :v",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy everest, cần chú ý zì hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định chốt accent là chuẩn bài, ngon qa",
+        "label": "positive"
+    },
+    {
+        "text": "innova đi đầm chắc, cách âm hết nước chấm hong các bác",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 k3 đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề? kk",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} city cũ đời 2019, rổ giá bao nhiêu thì hợp lý kk",
+        "label": "neutral"
+    },
+    {
+        "text": "xe altis này chại ngon quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "sonet đi hay hỏng vặt quá, biếc thế không chốt =))",
+        "label": "negative"
+    },
+    {
+        "text": "cx8 chạy bốc wa, hong chê vào đâu dc",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy altis, cần chú ý j khum mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "creta chại ồn qa, chán ốm hông chịu được ạ",
+        "label": "negative"
+    },
+    {
+        "text": "máy cerato yếu qúa, vượt vk 2 khác k nổi",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa creta ở hà nội ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc lux a không mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} civic cũ đời 2019, rổ giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chại civic cho em xin ít review hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền xpander là chuẩn bài, hết nước chấm quá hihi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên vinfast vf5 nhìu quá, xài ko hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng xuống tiền ranger nhé, chạy chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua creta mà lỗi nhìu quá, phèn hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "xe morning đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "sedona chạy ồn quá, tởm k chịu dc",
+        "label": "negative"
+    },
+    {
+        "text": "vf8 thay nhớt loại zì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người tư vấn giúp em lux sa bản tiêu chuẩn hay cao cấp vãi",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy crv cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "fortuner thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất mazda 3 đẹp vãi wa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 fortuner đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu giề",
+        "label": "neutral"
+    },
+    {
+        "text": "morning chạy ồn qá, chán khum chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất lux sa đẹp qúa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua carnival không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành cx5 {tệ} qa, k bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định chốt sedona là chuẩn bài, đỉnh chóp qá",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc sedona chạy sướng qa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em city bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "mới múc raize mà lỗi nhìu qúa, chán hẳn :v",
+        "label": "negative"
+    },
+    {
+        "text": "xe k3 này tiết kiệm xăng quá, ngon choét zồi",
+        "label": "positive"
+    },
+    {
+        "text": "lux a đi hay hỏng vặt qá, biếc thế hong xuống tiền",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành everest {tệ} quá, khum bao giờ múc lại nha",
+        "label": "negative"
+    },
+    {
+        "text": "quyết định múc veloz là chuẩn bài, ngon wa",
+        "label": "positive"
+    },
+    {
+        "text": "mới xuống tiền con lux a, đẹp vãi kh tả dc",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em hỏi morning thiệt hại ntn, em thít qúa rồi",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc vios hông mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh giá về lux sa với ạ ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "zợ 2 morning này tiết kiệm xăng qa, ngon rùi =))",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên morning nhìu qa, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng xuống tiền vinfast vf5 nhé, chạy chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành camry {tệ} qá, không bao giờ chốt lại",
+        "label": "negative"
+    },
+    {
+        "text": "xe city này hao xăng qa, fai làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "dịch vụ bảo hành seltos {tệ} quá, kh bao giờ chốt lại kk",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt veloz mà lỗi nhìu quá, chán ốm hẳn kk",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} xpander cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng múc carnival nhé, chạy chán {lắm} kk",
+        "label": "negative"
+    },
+    {
+        "text": "xe accent này chạy đỉnh chóp qa mọi người ơi hihi",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định múc camry là chuẩn bài, ngon choét qa",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên sedona nhìu qúa, xài hong hết",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt ranger chạy sướng quá mọi người ạ =))",
+        "label": "positive"
+    },
+    {
+        "text": "sonet đi đầm chắc, cách âm ngon choét không các bác",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc raize chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên múc accent hông mọi người?",
+        "label": "neutral"
+    },
+    {
+        "text": "xế vf9 này tiết kiệm xăng quá, hết nước chấm rùi",
+        "label": "positive"
+    },
+    {
+        "text": "xe fadil đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "xe santafe này chạy ngon choét qa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt con altis, đẹp kh tả dc ạ",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy altis, cần chú ý j k mọi người nhé",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi vf8 giá ntn, em thick qá rồi nha",
+        "label": "positive"
+    },
+    {
+        "text": "cerato đi hay hỏng vặt qúa, biếc thế khum múc",
+        "label": "negative"
+    },
+    {
+        "text": "vk 2 k3 này chại ngon quá mọi người ơi nhé",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất crv đẹp vãi quá, thích cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người tư vấn giúp em innova bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "máy civic yếu qa, vượt xe khác ko nổi =))",
+        "label": "negative"
+    },
+    {
+        "text": "mới xuống tiền con vf8, đỉnh k tả được",
+        "label": "positive"
+    },
+    {
+        "text": "chuẩn bị lấy city, cần chú ý gì ko mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "dịch vụ bảo hành fadil {tệ} quá, không bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa camry ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "tầm 600 củ thì nên mua cx8 k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt lux a mà lỗi nhìu wa, chán hẳn nhé",
+        "label": "negative"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa tucson ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "em định {múc} raize cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "xế tucson đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì? ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho creta hong các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người đừng mua sonet nhé, chạy chán ốm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua lux sa mà lỗi nhìu wa, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy cx5, cần chú ý zì k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên fadil nhiều qa, xài kh hết",
+        "label": "positive"
+    },
+    {
+        "text": "city chạy bốc quá, hông chê vào đâu dc nha",
+        "label": "positive"
+    },
+    {
+        "text": "fadil chạy bốc qa, khum chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "i10 đi hay hỏng vặt qá, biết thế hong xuống tiền ạ",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua con everest, đẹp không tả dc :v",
+        "label": "positive"
+    },
+    {
+        "text": "tầm 600 củ thì nên xuống tiền lux sa k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền morning là chuẩn bài, đỉnh chóp qa",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em xin đánh rổ giá về i10 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh giá về vf8 với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy altis cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "mới mua con accent, đẹp không tả được",
+        "label": "positive"
+    },
+    {
+        "text": "mazda 3 đi đầm chắc, cách âm hết nước chấm không các bác hihi",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng mua civic nhé, chạy tệ {lắm} kk",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi everest giá ntn, em thik qúa zồi",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua vf8 chạy sướng qa mọi người ạ :v",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành seltos {tệ} quá, không bao giờ chốt lại =))",
+        "label": "negative"
+    },
+    {
+        "text": "cx5 đi hay hỏng vặt quá, biếc thế không múc",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên creta nhìu qúa, xài ko hết",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} altis cũ đời 2019, giá bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy tucson, cần chú ý gì không mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em xin đánh giá về tucson với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "chuẩn bị lấy fortuner, cần chú ý j kh mọi người nha",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên mazda 3 nhìu quá, xài hông hết",
+        "label": "positive"
+    },
+    {
+        "text": "mới múc city chạy sướng quá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành accent {tệ} qá, hong bao giờ múc lại",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua sonet nhé, chạy tệ {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên xpander nhiều qa, xài hong hết",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng mua camry nhé, chạy tệ {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt raize mà lỗi nhìu quá, chán hẳn",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất xpander nhìn {phèn} qá, hong đẹp vãi như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "innova chạy bốc qúa, không chê vào đâu dc",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình seltos lag qa, xài bực mình khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "xế cerato đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 morning này chại hết nước chấm quá mọi người ơi :v",
+        "label": "positive"
+    },
+    {
+        "text": "máy raize yếu wa, vượt xe khác kh nổi",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua vinfast vf5 nhé, chại chán {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người đừng mua vinfast vf5 nhé, chạy phèn {lắm} =))",
+        "label": "negative"
+    },
+    {
+        "text": "tucson đi đầm chắc, cách âm hết nước chấm không các bác",
+        "label": "positive"
+    },
+    {
+        "text": "carnival thay nhớt loại gì thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "k3 chạy bốc qúa, không chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "xế city này hao xăng quá, phải làm sao đây mọi người",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy lux a, cần chú ý giề hong mọi người hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên vf8 nhìu quá, xài hông hết vãi",
+        "label": "positive"
+    },
+    {
+        "text": "công nghệ trên fortuner nhiều qá, xài hong hết ạ",
+        "label": "positive"
+    },
+    {
+        "text": "hỏi địa chỉ gara uy tín sửa vios ở hà nội",
+        "label": "neutral"
+    },
+    {
+        "text": "carnival chại ồn quá, tệ kh chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "chuẩn bị lấy cerato, cần chú ý j k mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "mới chốt veloz chại sướng qá mọi người ạ kk",
+        "label": "positive"
+    },
+    {
+        "text": "đi tucson mà ù tai wa, cách âm hông được tốt",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi đánh rổ giá về lux sa với ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "mọi người cho em hỏi k3 thiệt hại ntn, em thik quá rùi",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} innova cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "lux sa thay nhớt loại j thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "có nên phủ ceramic cho vinfast vf5 không các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy morning cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "bác nào đang chạy veloz cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "cerato chại bốc qá, hông chê vào đâu được",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người đừng múc carnival nhé, chại chán ốm {lắm}",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho fortuner không các bác",
+        "label": "neutral"
+    },
+    {
+        "text": "camry chại ồn quá, chán khum chịu được",
+        "label": "negative"
+    },
+    {
+        "text": "innova chại ồn wa, tệ không chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người cho em hỏi ranger thiệt hại ntn, em thick qa zồi ạ",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa morning ở Hà Nội",
+        "label": "neutral"
+    },
+    {
+        "text": "vk 2 mazda 3 này tiết kiệm xăng quá, ngon r hihi",
+        "label": "positive"
+    },
+    {
+        "text": "máy altis yếu qá, vượt zợ 2 khác ko nổi",
+        "label": "negative"
+    },
+    {
+        "text": "mới mua creta chạy sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới chốt con veloz, đỉnh ko tả được",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 civic đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất santafe đỉnh qúa, thích cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 fortuner này tiết kiệm xăng qúa, đỉnh chóp zồi",
+        "label": "positive"
+    },
+    {
+        "text": "creta thay nhớt loại j thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất xpander nhìn {phèn} qa, không đỉnh như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "xế carnival này chạy ngon quá mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua innova chạy sướng qá mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "zợ 2 raize này hao xăng qa, fai làm sao đây mọi người nha",
+        "label": "negative"
+    },
+    {
+        "text": "màn hình veloz lag qúa, xài bực mình khum chịu đk nhé",
+        "label": "negative"
+    },
+    {
+        "text": "em định {múc} innova cũ đời 2019, giá bao nhiêu thì hợp lý hihi",
+        "label": "neutral"
+    },
+    {
+        "text": "lux sa chạy bốc qa, không chê vào đâu đc hihi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất civic đỉnh qá, thik cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua civic chại sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy lux a cho em xin ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định múc altis là chuẩn bài, hết nước chấm qa nha",
+        "label": "positive"
+    },
+    {
+        "text": "altis đi hay hỏng vặt wa, biết thế không mua",
+        "label": "negative"
+    },
+    {
+        "text": "city đi hay hỏng vặt quá, biếc thế kh múc",
+        "label": "negative"
+    },
+    {
+        "text": "đi cx5 mà ù tai quá, cách âm hong đk tốt",
+        "label": "negative"
+    },
+    {
+        "text": "mới chốt vf8 chại sướng wa mọi người ạ",
+        "label": "positive"
+    },
+    {
+        "text": "mới mua con cx5, đẹp vãi kh tả đc",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành k3 {tệ} qa, hông bao giờ xuống tiền lại",
+        "label": "negative"
+    },
+    {
+        "text": "mọi người tư vấn giúp em camry bản tiêu chuẩn hay cao cấp",
+        "label": "neutral"
+    },
+    {
+        "text": "raize đi hay hỏng vặt qúa, biết thế không mua",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất innova nhìn {phèn} wa, ko đẹp như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất vios nhìn {phèn} quá, k xuất sắc như quảng cáo",
+        "label": "negative"
+    },
+    {
+        "text": "có nên phủ ceramic cho sonet k các bác?",
+        "label": "neutral"
+    },
+    {
+        "text": "công nghệ trên ranger nhiều wa, xài không hết",
+        "label": "positive"
+    },
+    {
+        "text": "quyết định mua fortuner là chuẩn bài, hết nước chấm qá",
+        "label": "positive"
+    },
+    {
+        "text": "dịch vụ bảo hành vf9 {tệ} qá, không bao giờ mua lại",
+        "label": "negative"
+    },
+    {
+        "text": "nội thất civic đẹp qúa, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "mọi người cho em hỏi vinfast vf5 giá ntn, em thít quá rồi",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất vf8 xuất sắc quá, thít cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "crv đi đầm chắc, cách âm ngon không các bác nhé",
+        "label": "positive"
+    },
+    {
+        "text": "xin địa chỉ gara uy tín sửa ranger ở hà nội =))",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất fortuner đỉnh wa, thick cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "xe carnival này chại ngon choét qa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "màn hình veloz lag qa, xài bực mình không chịu đk",
+        "label": "negative"
+    },
+    {
+        "text": "xe innova đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu gì? ạ",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất lux a đẹp vãi wa, thick cực kì nhé",
+        "label": "positive"
+    },
+    {
+        "text": "bác nào đang chạy cerato cho em hỏi ít review",
+        "label": "neutral"
+    },
+    {
+        "text": "xe sonet này chại đỉnh chóp qúa mọi người ơi",
+        "label": "positive"
+    },
+    {
+        "text": "em định {múc} camry cũ đời 2019, thiệt hại bao nhiêu thì hợp lý",
+        "label": "neutral"
+    },
+    {
+        "text": "đi xpander mà ù tai quá, cách âm ko đc tốt",
+        "label": "negative"
+    },
+    {
+        "text": "camry thay nhớt loại giề thì tốt hả mọi người",
+        "label": "neutral"
+    },
+    {
+        "text": "nội thất santafe đẹp wa, thích cực kì",
+        "label": "positive"
+    },
+    {
+        "text": "nội thất city nhìn {phèn} qa, kh đẹp như quảng cáo nhé",
+        "label": "negative"
+    },
+    {
+        "text": "công nghệ trên creta nhìu wa, xài khum hết",
+        "label": "positive"
+    },
+    {
+        "text": "vk 2 veloz đi bảo dưỡng cấp 4 vạn hết khoảng bao nhiêu zì",
+        "label": "neutral"
+    },
+    {
+        "text": "quyết định xuống tiền vf9 là chuẩn bài, đỉnh chóp quá",
+        "label": "positive"
+    }
+]

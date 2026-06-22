@@ -1,0 +1,30 @@
+services:
+  ai_worker:
+    image: mat_ai_worker:staging
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: sh -c "pip install -r requirements.txt && python main.py"
+    restart: unless-stopped
+
+  ai_train:
+    image: mat_ai_worker:staging
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: sh -c "pip install -r requirements.txt && python train.py"
+    # Tránh tự động chạy khi gõ `docker-compose up -d` chung với các service khác
+    profiles:
+      - training
+    # Đặt thành "no" để không bị lặp vô tận (infinite loop) sau khi train xong
+    restart: "no"

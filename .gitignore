@@ -1,0 +1,53 @@
+# ==========================================
+# 1. OS & IDEs
+# ==========================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==========================================
+# 2. Môi trường & Biến mật (Cực kỳ quan trọng)
+# ==========================================
+
+# ==========================================
+# 3. Python (API & AI)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+
+# Các mô hình AI nặng (Sẽ được tự tải qua entrypoint)
+*.safetensors
+*.bin
+*.jar
+*.ftz
+AI/libs/vncorenlp/phobert_sentiment_model_checkpoints/
+
+# ==========================================
+# 4. Node.js & Next.js (Web Frontend)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+out/
+build/
+dist/
+
+# ==========================================
+# 5. Database & Docker Volumes
+# ==========================================
+postgres_data/
+rabbitmq_data/
+ai_models_cache/
+*.sql.gz

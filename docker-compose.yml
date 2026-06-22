@@ -1,0 +1,138 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: mat_db
+    restart: always
+    env_file:
+      - path: ./.env.product
+        required: true
+      - path: ./.env
+        required: false
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - mat_network
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: mat_rabbitmq
+    restart: always
+    env_file:
+      - path: ./.env.product
+        required: true
+      - path: ./.env
+        required: false
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - mat_network
+
+  api:
+    build:
+      context: ./API
+      dockerfile: Dockerfile
+    container_name: mat_api
+    restart: always
+    env_file:
+      - path: ./API/.env.product
+        required: true
+      - path: ./API/.env
+        required: false
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - rabbitmq
+    networks:
+      - mat_network
+    command: >
+      sh -c "alembic upgrade head && uvicorn serve:app --host 0.0.0.0 --port 8000"
+
+  ai_worker:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+      # Bỏ cụm code dưới đây nếu Server CÓ GPU NVIDIA
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: always
+    env_file:
+      - path: ./AI/.env.product
+        required: true
+      - path: ./AI/.env
+        required: false
+    volumes:
+      - ai_models_cache:/app/ai_models
+    depends_on:
+      - rabbitmq
+      - db
+    networks:
+      - mat_network
+
+  web:
+    build:
+      context: ./Web
+      dockerfile: Dockerfile
+    container_name: mat_web
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: ./Web/.env.product
+        required: true
+      - path: ./Web/.env
+        required: false
+    depends_on:
+      - api
+    networks:
+      - mat_network
+
+  ai_train:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    container_name: mat_ai_train
+    env_file:
+      - path: ./AI/.env.product
+        required: true
+      - path: ./AI/.env
+        required: false
+    volumes:
+      - ai_models_cache:/app/ai_models
+    depends_on:
+      - db
+    networks:
+      - mat_network
+    command: ["python", "train.py"]
+    profiles:
+      - training
+    restart: "no"
+    # Dóng cụm code dưới đây nếu Server CÓ GPU NVIDIA
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+networks:
+  mat_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  rabbitmq_data:
+  ai_models_cache:
