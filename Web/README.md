@@ -35,4 +35,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-docker stop $(docker ps -aq) && docker rm -f $(docker ps -aq) && && docker rmi -f $(docker images -aq) && docker volume rm $(docker volume ls -q) && docker volume rm -f $(docker volume ls -q)
+docker stop $(docker ps -aq) && docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -aq) && docker volume rm $(docker volume ls -q) && docker volume rm -f $(docker volume ls -q)
