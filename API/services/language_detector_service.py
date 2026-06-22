@@ -3,6 +3,15 @@ import fasttext
 import re
 from libs.detection import TeencodeDetector
 
+# ==========================================
+# CẤU HÌNH ĐƯỜNG DẪN MẶC ĐỊNH
+# ==========================================
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DEFAULT_TEENCODE_DICT_PATH = os.path.join(BASE_DIR, "libs", "teencode_dictionary.json")
+DEFAULT_FASTTEXT_MODEL_PATH = os.path.join(
+    BASE_DIR, "libs", "detection", "models", "lid.176.ftz"
+)
+
 
 def clean_text(text: str) -> str:
     """
@@ -24,18 +33,12 @@ class VietnameseDetector:
     """
 
     def __init__(self, teencode_dict_path: str = None, fasttext_model_path: str = None):
-        base_dir = os.path.dirname(os.path.dirname(__file__))
-
         # Định tuyến file Local (Tuyệt đối không tải từ Internet)
         if not teencode_dict_path:
-            teencode_dict_path = os.path.join(
-                base_dir, "libs", "teencode_dictionary.json"
-            )
+            teencode_dict_path = DEFAULT_TEENCODE_DICT_PATH
 
         if not fasttext_model_path:
-            fasttext_model_path = os.path.join(
-                base_dir, "libs", "detection", "models", "lid.176.ftz"
-            )
+            fasttext_model_path = DEFAULT_FASTTEXT_MODEL_PATH
 
         if not os.path.exists(fasttext_model_path):
             raise FileNotFoundError(
