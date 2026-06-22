@@ -21,5 +21,9 @@ ENV PYTHONUNBUFFERED=1
 # Expose port
 EXPOSE 8000
 
+# Phân quyền thực thi cho entrypoint
+RUN chmod +x entrypoint.sh
+
 # Lệnh chạy FastAPI
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["uvicorn", "serve:app", "--host", "0.0.0.0", "--port", "8000"]
