@@ -1,9 +1,8 @@
 #!/bin/bash
 set -e
 
-# Khai báo biến môi trường thư mục chứa model, mặc định là ./libs (khi chạy local)
-# Trong Docker, biến này sẽ bị ghi đè thành /app/ai_models thông qua file .env
-AI_MODELS_DIR="${AI_MODELS_DIR:-./libs}"
+# Không dùng biến môi trường nữa, tải thẳng vào thư mục nội bộ /app/libs
+AI_MODELS_DIR="./libs"
 
 echo "====================================="
 echo "   KIỂM TRA TÀI NGUYÊN AI MÔ HÌNH"

@@ -46,8 +46,6 @@ services:
         required: false
     ports:
       - "8000:8000"
-    volumes:
-      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     depends_on:
       - db
       - rabbitmq
@@ -57,26 +55,24 @@ services:
       sh -c "alembic upgrade head && uvicorn serve:app --host 0.0.0.0 --port 8000"
 
   ai_worker:
+    container_name: mat_ai_worker
     build:
       context: ./AI
       dockerfile: Dockerfile
-    deploy:
-      replicas: 2
-      # Bỏ cụm code dưới đây nếu Server CÓ GPU NVIDIA
-      # resources:
-      #   reservations:
-      #     devices:
-      #       - driver: nvidia
-      #         count: 1
-      #         capabilities: [gpu]
+    # Bỏ cụm code dưới đây nếu Server CÓ GPU NVIDIA
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
     restart: always
     env_file:
       - path: ./AI/.env.product
         required: true
       - path: ./AI/.env
         required: false
-    volumes:
-      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     depends_on:
       - rabbitmq
       - db
@@ -111,9 +107,8 @@ services:
         required: true
       - path: ./AI/.env
         required: false
-    volumes:
-      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     depends_on:
+      - rabbitmq
       - db
     networks:
       - mat_network
@@ -137,4 +132,3 @@ networks:
 volumes:
   postgres_data:
   rabbitmq_data:
-  ai_models_cache:
