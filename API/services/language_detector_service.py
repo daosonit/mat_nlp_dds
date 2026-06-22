@@ -32,25 +32,18 @@ class VietnameseDetector:
     - Lớp 2: Dùng mô hình FastText (lid.176.ftz) để nhận diện ngôn ngữ.
     """
 
-    def __init__(self, teencode_dict_path: str = None, fasttext_model_path: str = None):
-        # Định tuyến file Local (Tuyệt đối không tải từ Internet)
-        if not teencode_dict_path:
-            teencode_dict_path = DEFAULT_TEENCODE_DICT_PATH
-
-        if not fasttext_model_path:
-            fasttext_model_path = DEFAULT_FASTTEXT_MODEL_PATH
-
-        if not os.path.exists(fasttext_model_path):
+    def __init__(self):
+        if not os.path.exists(DEFAULT_FASTTEXT_MODEL_PATH):
             raise FileNotFoundError(
-                f"Không tìm thấy model FastText tại {fasttext_model_path}. Hãy đảm bảo đã tải file lid.176.ftz vào đúng thư mục."
+                f"Không tìm thấy model FastText tại {DEFAULT_FASTTEXT_MODEL_PATH}. Hãy đảm bảo đã tải file lid.176.ftz vào đúng thư mục."
             )
 
         # 1. Load Teencode Detector
-        self.teencode_detector = TeencodeDetector(dictionary_path=teencode_dict_path)
+        self.teencode_detector = TeencodeDetector(dictionary_path=DEFAULT_TEENCODE_DICT_PATH)
 
         # 2. Load FastText Model
         fasttext.FastText.eprint = lambda x: None  # Ẩn các warning của FastText
-        self.ft_model = fasttext.load_model(fasttext_model_path)
+        self.ft_model = fasttext.load_model(DEFAULT_FASTTEXT_MODEL_PATH)
 
         # 3. Regex kiểm tra nguyên âm
         self.vowel_pattern = re.compile(
