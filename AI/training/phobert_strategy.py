@@ -78,7 +78,7 @@ class PhoBertStrategy(ModelStrategy):
             model=model,
             tokenizer=tokenizer,
             device=self._device,
-            batch_size=16, # Bật cơ chế Batching
+            batch_size=16,  # Bật cơ chế Batching
         )
         logger.info("PhoBERT pipeline đã khởi tạo thành công.")
 

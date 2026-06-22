@@ -10,7 +10,7 @@ async def handle_predict_result(payload: dict):
     """
     # Gửi kết quả qua WebSocket cho tab/client cụ thể
     client_id = payload.get("client_id")
-
+    logger.info("Có tin nhắn")
     if client_id:
         if client_id in ws_manager.active_connections:
             await ws_manager.send_personal_message(

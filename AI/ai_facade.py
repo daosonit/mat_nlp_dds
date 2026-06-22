@@ -52,18 +52,11 @@ class AIFacade:
         )
 
         # 2. PhoBERT Strategy
-        phobert = PhoBertStrategy(
-            model_path=os.path.join(base_dir, "ai_models", "phobert_sentiment_model_final"),
-            vncorenlp_dir=os.path.join(base_dir, "ai_models", "vncorenlp"),
-            device=device,
-        )
+        phobert = PhoBertStrategy(device=device)
         phobert.initialize()
 
         # 3. ViSoBERT Strategy
-        visobert = ViSoBertStrategy(
-            model_path=os.path.join(base_dir, "ai_models", "visobert_sentiment_model_final"),
-            device=device,
-        )
+        visobert = ViSoBertStrategy(device=device)
         visobert.initialize()
 
         # 4. Model Router (đăng ký strategies)

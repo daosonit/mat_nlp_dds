@@ -30,7 +30,8 @@ venv/
 *.jar
 *.ftz
 AI/libs/vncorenlp/phobert_sentiment_model_checkpoints/
-
+AI/libs/cache_tokenized_data/
+AI/libs/cache_visobert_tokenized_data/
 # ==========================================
 # 4. Node.js & Next.js (Web Frontend)
 # ==========================================

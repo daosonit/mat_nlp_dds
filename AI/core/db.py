@@ -15,6 +15,12 @@ class DatabasePool:
             if not database_url:
                 logger.warning("DATABASE_URL không tồn tại trong biến môi trường!")
                 return
+
+            if database_url.startswith("postgresql+asyncpg://"):
+                database_url = database_url.replace(
+                    "postgresql+asyncpg://", "postgresql://", 1
+                )
+
             try:
                 # Tạo connection pool với asyncpg
                 self.pool = await asyncpg.create_pool(

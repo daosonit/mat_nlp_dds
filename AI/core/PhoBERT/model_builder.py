@@ -8,6 +8,30 @@ from core.base.base_model_builder import BaseModelBuilder
 
 logger = logging.getLogger(__name__)
 
+import urllib.request
+
+def _download_vncorenlp(save_dir: str):
+    """Tải VnCoreNLP thuần Python (không phụ thuộc lệnh wget của OS)."""
+    base_url = "https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master"
+    files = [
+        "VnCoreNLP-1.2.jar",
+        "models/wordsegmenter/vi-vocab",
+        "models/wordsegmenter/wordsegmenter.rdr",
+        "models/postagger/vi-tagger",
+        "models/ner/vi-500brownclusters.xz",
+        "models/ner/vi-ner.xz",
+        "models/ner/vi-pretrainedembeddings.xz",
+        "models/dep/vi-dep.xz"
+    ]
+    
+    for f in files:
+        url = f"{base_url}/{f}"
+        local_path = os.path.join(save_dir, f)
+        os.makedirs(os.path.dirname(local_path), exist_ok=True)
+        if not os.path.exists(local_path):
+            logger.info(f"Downloading {f}...")
+            urllib.request.urlretrieve(url, local_path)
+
 
 class PhoBertModelBuilder(BaseModelBuilder):
     """
@@ -29,7 +53,7 @@ class PhoBertModelBuilder(BaseModelBuilder):
             logger.info("Dang tai model VnCoreNLP lan dau...")
             os.makedirs(vncorenlp_dir, exist_ok=True)
             try:
-                py_vncorenlp.download_model(save_dir=vncorenlp_dir)
+                _download_vncorenlp(vncorenlp_dir)
             except Exception as e:
                 raise RuntimeError(
                     f"Khong the tai VnCoreNLP. Kiem tra ket noi mang.\nChi tiet loi: {e}"
@@ -43,8 +67,9 @@ class PhoBertModelBuilder(BaseModelBuilder):
             os.chdir(current_dir)
         except Exception as e:
             raise RuntimeError(
-                f"Khong the khoi dong VnCoreNLP. Hay chac chan da cai Java 17:\n"
-                f"   sudo apt install -y openjdk-17-jdk\n"
+                f"Khong the khoi dong VnCoreNLP. Hay chac chan da cai Java:\n"
+                f"   Ubuntu: sudo apt install -y openjdk-17-jdk\n"
+                f"   macOS: brew install openjdk@17\n"
                 f"Chi tiet loi: {e}"
             )
 

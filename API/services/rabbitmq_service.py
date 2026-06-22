@@ -17,7 +17,7 @@ RABBITMQ_PORT = os.getenv("RABBITMQ_PORT", "5672")
 
 RABBITMQ_URL = os.getenv(
     "RABBITMQ_URL",
-    f"amqp://{RABBITMQ_USER}:{RABBITMQ_PASS}@{RABBITMQ_HOST}:{RABBITMQ_PORT}/"
+    f"amqp://{RABBITMQ_USER}:{RABBITMQ_PASS}@{RABBITMQ_HOST}:{RABBITMQ_PORT}/",
 )
 
 # =============================================================================

@@ -90,7 +90,7 @@ services:
     image: mat_ai
     container_name: mat_ai_train
     env_file:
-      - path: ./AI/.env.product
+      - path: ./AI/.env.productpython3 --version
         required: true
     volumes:
       - ./AI:/app

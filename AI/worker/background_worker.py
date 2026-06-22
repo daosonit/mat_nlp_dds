@@ -1,5 +1,4 @@
 import asyncio
-import logging
 import uuid
 
 from core.db import db
@@ -11,8 +10,6 @@ from services.rabbitmq_service import (
 
 from training.router import ModelRouter
 
-logger = logging.getLogger(__name__)
-
 
 async def start_rabbitmq_worker(model_router: ModelRouter):
     """
@@ -21,7 +18,6 @@ async def start_rabbitmq_worker(model_router: ModelRouter):
 
     async def process_ai_task_batch(payloads: list[dict]):
         batch_size = len(payloads)
-        logger.info(f"[*] Background Worker bắt đầu xử lý bó {batch_size} tin nhắn")
 
         try:
             # QUAN TRỌNG: Đưa tác vụ AI nặng (CPU-Bound) ra Thread riêng
@@ -65,24 +61,13 @@ async def start_rabbitmq_worker(model_router: ModelRouter):
                             """,
                             db_args,
                         )
-                        logger.info(
-                            f"Đã lưu {len(db_args)} bản ghi vào bảng public.words_training"
-                        )
                     except Exception as db_err:
-                        logger.error(
-                            f"Lỗi khi insert vào public.words_training: {db_err}"
-                        )
+                        pass
 
             # Chạy lưu DB ở background, không block
             asyncio.create_task(_save_to_db(results))
 
-            logger.info(f"Background Worker đã xử lý và trả về {batch_size} kết quả.")
-
         except Exception as e:
-            logger.error(
-                f"[x] Background Worker lỗi khi xử lý batch {batch_size} tin nhắn: {e}",
-                exc_info=True,
-            )
             for p in payloads:
                 error_message = {
                     "task_id": p.get("task_id", "unknown"),
@@ -94,7 +79,6 @@ async def start_rabbitmq_worker(model_router: ModelRouter):
                     error_message, routing_key=ROUTING_KEY_PREDICT_RESULTS
                 )
 
-    logger.info("Khởi động lắng nghe RabbitMQ (BATCH MODE) trên Background Task...")
     try:
         await rabbitmq.consume_messages_batch(
             queue_name=ROUTING_KEY_PREDICT_REQUESTS,
@@ -103,6 +87,6 @@ async def start_rabbitmq_worker(model_router: ModelRouter):
             callback_function=process_ai_task_batch,
         )
     except asyncio.CancelledError:
-        logger.info("RabbitMQ Background Task đã nhận tín hiệu đóng.")
+        pass
     except Exception as e:
-        logger.error(f"Lỗi vòng lặp RabbitMQ Worker: {e}", exc_info=True)
+        pass
