@@ -58,7 +58,7 @@ else:
 
 python -c "
 import os, urllib.request
-file_path = './libs/detection_models/lid.176.ftz'
+file_path = './libs/detection/models/lid.176.ftz'
 temp_path = file_path + '.tmp'
 if not os.path.exists(file_path):
     print('4. Đang tải FastText Language Detection Model vào ./libs...')
