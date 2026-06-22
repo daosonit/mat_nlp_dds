@@ -39,7 +39,9 @@ class VietnameseDetector:
             )
 
         # 1. Load Teencode Detector
-        self.teencode_detector = TeencodeDetector(dictionary_path=DEFAULT_TEENCODE_DICT_PATH)
+        self.teencode_detector = TeencodeDetector(
+            dictionary_path=DEFAULT_TEENCODE_DICT_PATH
+        )
 
         # 2. Load FastText Model
         fasttext.FastText.eprint = lambda x: None  # Ẩn các warning của FastText
