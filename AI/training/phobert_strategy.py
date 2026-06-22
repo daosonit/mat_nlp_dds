@@ -70,10 +70,8 @@ class PhoBertStrategy(ModelStrategy):
             model_path = self._fallback_model
 
         logger.info(f"Đang tải PhoBERT từ: {model_path}")
-        tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
-        model = AutoModelForSequenceClassification.from_pretrained(
-            model_path, local_files_only=True
-        )
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
+        model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
         self._pipeline = pipeline(
             "text-classification",

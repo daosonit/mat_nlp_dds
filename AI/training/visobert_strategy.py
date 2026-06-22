@@ -57,14 +57,12 @@ class ViSoBertStrategy(ModelStrategy):
 
         logger.info(f"Đang tải ViSoBERT từ: {model_path}")
         #              tokenizer1 = AutoTokenizer.from_pretrained(
-        # -            model_path, use_fast=False, local_files_only=True
+        # -            model_path, use_fast=False
         # )
         tokenizer = XLMRobertaTokenizer.from_pretrained(
-            model_path, use_fast=False, local_files_only=True
+            model_path, use_fast=False
         )
-        model = AutoModelForSequenceClassification.from_pretrained(
-            model_path, local_files_only=True
-        )
+        model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
         self._pipeline = pipeline(
             "text-classification",
