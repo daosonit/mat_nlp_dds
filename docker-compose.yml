@@ -63,13 +63,13 @@ services:
       dockerfile: Dockerfile
     image: mat_ai
     # Bỏ cụm code dưới đây nếu Server CÓ GPU NVIDIA
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     restart: always
     env_file:
       - path: ./AI/.env.product
@@ -105,13 +105,13 @@ services:
       - training
     restart: "no"
     # Dóng cụm code dưới đây nếu Server CÓ GPU NVIDIA
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
   web:
     build:
