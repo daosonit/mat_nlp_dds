@@ -1,7 +1,7 @@
 HƯỚNG DẪN TRIỂN KHAI (DEPLOYMENT GUIDE)
 
 Dưới đây là các bước chi tiết để triển khai hệ thống MAT NLP DDS lên server.
-
+Nếu có GPU thì docker-compose.yml bỏ đoạn dòng 66 và 107 ra
 BƯỚC 1: CLONE MÃ NGUỒN
 
 - Tải mã nguồn từ GitHub (nhánh main):
