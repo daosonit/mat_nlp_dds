@@ -1,54 +1,40 @@
-# Hướng Dẫn Triển Khai (Deployment Guide)
+HƯỚNG DẪN TRIỂN KHAI (DEPLOYMENT GUIDE)
 
 Dưới đây là các bước chi tiết để triển khai hệ thống MAT NLP DDS lên server.
 
-## Bước 1: Clone mã nguồn từ GitHub
+BƯỚC 1: CLONE MÃ NGUỒN
 
-Tải mã nguồn dự án về máy server bằng lệnh `git clone` nhánh main:
+- Tải mã nguồn từ GitHub (nhánh main):
+  git clone https://github.com/daosonit/mat_nlp_dds
+- Di chuyển vào thư mục dự án:
+  cd mat_nlp_dds
 
-```bash
-git clone https://github.com/daosonit/mat_nlp_dds
-```
+BƯỚC 2: CẤU HÌNH TÊN MIỀN (DOMAIN)
 
-Di chuyển vào thư mục dự án vừa tải về:
+- Bạn cần mở và chỉnh sửa lại tên miền của mình trong các file cấu hình môi trường của phần Web:
+  - Web/.env.product
+  - Web/.env
+- Lưu ý: Thay thế các giá trị host/domain mặc định bằng domain thực tế đang dùng trên server.
 
-```bash
-cd mat_nlp_dds
-```
+BƯỚC 3: KHỞI CHẠY HỆ THỐNG
 
-## Bước 2: Cấu hình tên miền (Domain)
+- Khi đã cấu hình xong, tiến hành khởi động toàn bộ hệ thống bằng lệnh:
+  docker compose up -d --build
+- LƯU Ý QUAN TRỌNG: Quá trình cài đặt lần đầu sẽ tốn khá nhiều thời gian. Hệ thống cần tải các thư viện và mô hình AI (PhoBERT, ViSoBERT, FastText, VnCoreNLP) nặng khoảng 2GB vào các thư mục:
+  - /libs/detection/models
+  - /libs/phobert_sentiment_model_final
+  - /libs/visobert_sentiment_model_final
+  - /libs/vncorenlp
+- Bạn phải đợi cho đến khi toàn bộ các thư mục này được tải xong (container api và ai_worker chạy ổn định) thì mới có thể thực hiện bước tiếp theo.
 
-Bạn cần mở và chỉnh sửa lại tên miền (domain) của bạn trong các file cấu hình môi trường của phần Web:
+BƯỚC 4: HUẤN LUYỆN AI (TRAINING)
 
-- `Web/.env.product`
-- `Web/.env`
+- Quá trình huấn luyện được cấu hình chạy riêng lẻ. Chỉ khi nào Bước 3 đã hoàn tất 100% (tải xong các model), bạn mới chạy lệnh sau để bắt đầu train:
+  docker compose --profile training up ai_train
+- Tiến trình này sẽ chạy các script huấn luyện bên trong container ai_train, và sẽ tự động dừng lại khi hoàn tất.
 
-_Lưu ý: Hãy thay thế các giá trị host/domain mặc định trong file bằng domain thực tế mà server bạn đang sử dụng._
+BƯỚC 5: KIỂM TRA KẾT QUẢ
 
-## Bước 3: Khởi chạy hệ thống bằng Docker Compose
-
-Sau khi đã cấu hình xong tên miền, bạn tiến hành build và khởi động toàn bộ hệ thống (Web, API, DB, RabbitMQ...) bằng lệnh sau:
-
-```bash
-docker compose up -d --build
-```
-
-_Vui lòng chờ một vài phút để Docker tiến hành tải các images, cài đặt thư viện và khởi động các container._
-
-## Bước 4: Chạy quá trình huấn luyện AI (Training)
-
-Quá trình huấn luyện mô hình được cấu hình chạy riêng lẻ khi cần thiết. Khi toàn bộ hệ thống đã khởi động xong, bạn có thể chạy tiến trình train bằng lệnh:
-
-```bash
-docker compose --profile training up ai_train
-```
-
-_Tiến trình này sẽ chạy các script huấn luyện bên trong container `ai_train`. Khi quá trình huấn luyện hoàn tất, container này sẽ tự động dừng._
-
-## Bước 5: Kiểm tra kết quả
-
-Sau khi quá trình huấn luyện hoàn tất, để kiểm tra các kết quả train hoặc log của hệ thống, bạn cần truy cập trực tiếp vào Database hoặc RabbitMQ.
-
-Bạn có thể xem các thông tin đăng nhập, cổng (port) kết nối của Database và RabbitMQ tại file cấu hình ở thư mục gốc:
-
-- `.env.product`
+- Sau khi huấn luyện hoàn tất, bạn có thể kiểm tra kết quả hoặc log hệ thống bằng cách truy cập trực tiếp vào Database hoặc RabbitMQ.
+- Thông tin đăng nhập và cổng kết nối của DB/RabbitMQ nằm tại file cấu hình gốc:
+  - .env.product

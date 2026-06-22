@@ -128,7 +128,7 @@ services:
     volumes:
       - ./Web:/app
       - ./Web/.env.product:/app/.env.product
-    command: sh -c "npm install && npm run build && npm start"
+    command: sh -c "npm install --include=dev && npm run build && npm start"
     depends_on:
       - api
     networks:
