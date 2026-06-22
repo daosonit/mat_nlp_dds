@@ -5,11 +5,13 @@ echo "====================================="
 echo "   KIỂM TRA TÀI NGUYÊN AI MÔ HÌNH"
 echo "====================================="
 
+echo "Cập nhật các thư viện từ requirements.txt..."
+pip install --no-cache-dir -r requirements.txt
 # Cài thư viện ngầm nếu chưa có
 pip install --no-cache-dir huggingface_hub py_vncorenlp protobuf >/dev/null 2>&1
 
 python -c "
-import py_vncorenlp, os
+import py_vncorenlp, os, shutil
 save_dir = './libs/vncorenlp'
 target = os.path.join(save_dir, 'models', 'wordsegmenter', 'wordsegmenter.rdr')
 if not os.path.exists(target):
@@ -17,8 +19,9 @@ if not os.path.exists(target):
     os.makedirs(save_dir, exist_ok=True)
     try:
         py_vncorenlp.download_model(save_dir=save_dir)
-    except FileExistsError:
-        pass
+        print('Tải xong VnCoreNLP.')
+    except Exception as e:
+        print(f'Lỗi tải VnCoreNLP: {e}')
 else:
     print('1. VnCoreNLP đã tồn tại trong cache, bỏ qua tải.')
 "
@@ -29,7 +32,11 @@ from huggingface_hub import snapshot_download
 target = './libs/phobert_sentiment_model_final'
 if not os.path.exists(target):
     print('2. Đang tải PhoBERT Sentiment Model vào ./libs...')
-    snapshot_download(repo_id='vinai/phobert-base-v2', local_dir=target)
+    try:
+        snapshot_download(repo_id='vinai/phobert-base-v2', local_dir=target)
+        print('Tải xong PhoBERT.')
+    except Exception as e:
+        print(f'Lỗi tải PhoBERT: {e}')
 else:
     print('2. PhoBERT Sentiment Model đã tồn tại trong cache, bỏ qua tải.')
 "
@@ -40,7 +47,11 @@ from huggingface_hub import snapshot_download
 target = './libs/visobert_sentiment_model_final'
 if not os.path.exists(target):
     print('3. Đang tải ViSoBERT Sentiment Model vào ./libs...')
-    snapshot_download(repo_id='uitnlp/visobert', local_dir=target)
+    try:
+        snapshot_download(repo_id='uitnlp/visobert', local_dir=target)
+        print('Tải xong ViSoBERT.')
+    except Exception as e:
+        print(f'Lỗi tải ViSoBERT: {e}')
 else:
     print('3. ViSoBERT Sentiment Model đã tồn tại trong cache, bỏ qua tải.')
 "
@@ -48,10 +59,18 @@ else:
 python -c "
 import os, urllib.request
 file_path = './libs/detection_models/lid.176.ftz'
+temp_path = file_path + '.tmp'
 if not os.path.exists(file_path):
     print('4. Đang tải FastText Language Detection Model vào ./libs...')
-    os.makedirs('./libs/detection_models', exist_ok=True)
-    urllib.request.urlretrieve('https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz', file_path)
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    try:
+        urllib.request.urlretrieve('https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz', temp_path)
+        os.rename(temp_path, file_path)
+        print('Tải xong FastText.')
+    except Exception as e:
+        print(f'Lỗi tải FastText: {e}')
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
 else:
     print('4. FastText Model đã tồn tại trong cache, bỏ qua tải.')
 "

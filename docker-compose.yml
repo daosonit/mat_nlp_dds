@@ -90,7 +90,7 @@ services:
     image: mat_ai
     container_name: mat_ai_train
     env_file:
-      - path: ./AI/.env.productpython3 --version
+      - path: ./AI/.env.product
         required: true
     volumes:
       - ./AI:/app
@@ -125,6 +125,10 @@ services:
     env_file:
       - path: ./Web/.env.product
         required: true
+    volumes:
+      - ./Web:/app
+      - ./Web/.env.product:/app/.env.product
+    command: sh -c "npm install && npm run build && npm start"
     depends_on:
       - api
     networks:

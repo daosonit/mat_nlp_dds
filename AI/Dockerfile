@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y \
     cmake \
     libgomp1 \
     curl \
+    wget \
+    unzip \
     git \
     && rm -rf /var/lib/apt/lists/*
 
