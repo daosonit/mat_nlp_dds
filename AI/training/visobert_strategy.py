@@ -2,7 +2,7 @@ import os
 import logging
 
 # pyrefly: ignore [missing-import]
-from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
+from transformers import AutoModelForSequenceClassification, XLMRobertaTokenizer, pipeline
 
 from training.base import ModelStrategy
 from core.config import VISOBERT_MODEL_DIR
@@ -52,8 +52,8 @@ class ViSoBertStrategy(ModelStrategy):
             model_path = self._fallback_model
 
         logger.info(f"Đang tải ViSoBERT từ: {model_path}")
-        tokenizer = AutoTokenizer.from_pretrained(
-            model_path, use_fast=False, local_files_only=True
+        tokenizer = XLMRobertaTokenizer.from_pretrained(
+            model_path, local_files_only=True
         )
         model = AutoModelForSequenceClassification.from_pretrained(
             model_path, local_files_only=True

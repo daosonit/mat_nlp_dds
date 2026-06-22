@@ -1,7 +1,7 @@
 import logging
 
 # pyrefly: ignore [missing-import]
-from transformers import AutoTokenizer
+from transformers import XLMRobertaTokenizer
 
 from core.base.base_pipeline import BaseTrainingPipeline
 from core.ViSoBERT.config import ViSoBertTrainConfig
@@ -29,7 +29,8 @@ class ViSoBertTrainingPipeline(BaseTrainingPipeline):
         logger.info("--- BƯỚC 1: CHUẨN BỊ DỮ LIỆU (ViSoBERT) ---")
 
         # ViSoBERT có tokenizer riêng, tải sẵn để tokenize
-        temp_tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
+        # temp_tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
+        temp_tokenizer = XLMRobertaTokenizer.from_pretrained(self.config.model_name)
 
         # Chạy pipeline xử lý dữ liệu (KHÔNG có segmenter)
         self.tokenized_datasets = self.data_processor.process(

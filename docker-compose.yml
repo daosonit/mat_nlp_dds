@@ -46,6 +46,8 @@ services:
         required: false
     ports:
       - "8000:8000"
+    volumes:
+      - ai_models_cache:/app/ai_models
     depends_on:
       - db
       - rabbitmq

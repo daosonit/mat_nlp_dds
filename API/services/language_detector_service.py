@@ -39,7 +39,7 @@ class VietnameseDetector:
 
         if not os.path.exists(fasttext_model_path):
             raise FileNotFoundError(
-                f"Không tìm thấy model FastText tại {fasttext_model_path}. Hãy copy file lid.176.ftz vào thư mục detection/models/"
+                f"Không tìm thấy model FastText tại {fasttext_model_path}. Hãy đảm bảo đã tải file lid.176.ftz vào đúng thư mục."
             )
 
         # 1. Load Teencode Detector

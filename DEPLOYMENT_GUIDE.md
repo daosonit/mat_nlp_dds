@@ -4,7 +4,7 @@ Dưới đây là các bước chi tiết để triển khai hệ thống MAT NL
 
 ## Bước 1: Clone mã nguồn từ GitHub
 
-Tải mã nguồn dự án về máy server bằng lệnh `git clone`:
+Tải mã nguồn dự án về máy server bằng lệnh `git clone` nhánh main:
 
 ```bash
 git clone https://github.com/daosonit/mat_nlp_dds
