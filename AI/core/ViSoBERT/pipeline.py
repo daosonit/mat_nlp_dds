@@ -30,7 +30,7 @@ class ViSoBertTrainingPipeline(BaseTrainingPipeline):
 
         # ViSoBERT có tokenizer riêng, tải sẵn để tokenize
         # temp_tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
-        temp_tokenizer = XLMRobertaTokenizer.from_pretrained(self.config.model_name)
+        temp_tokenizer = XLMRobertaTokenizer.from_pretrained(self.config.model_name, use_fast=False)
 
         # Chạy pipeline xử lý dữ liệu (KHÔNG có segmenter)
         self.tokenized_datasets = self.data_processor.process(

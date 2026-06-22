@@ -10,7 +10,7 @@ services:
       # Mount code trực tiếp để dev/staging có thể hot-reload
       - .:/app
       # Mount thư mục cache model giống file docker-compose gốc
-      - ai_models_cache:/app/ai_models
+      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     ports:
       - "8000:8000"
     # Lệnh sẽ cài đặt thư viện mới nhất, chạy migration và start uvicorn với chế độ reload

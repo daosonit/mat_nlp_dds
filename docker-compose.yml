@@ -47,7 +47,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ai_models_cache:/app/ai_models
+      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     depends_on:
       - db
       - rabbitmq
@@ -76,7 +76,8 @@ services:
       - path: ./AI/.env
         required: false
     volumes:
-      - ai_models_cache:/app/ai_models
+      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
+      - ./AI:/app
     depends_on:
       - rabbitmq
       - db
@@ -112,7 +113,7 @@ services:
       - path: ./AI/.env
         required: false
     volumes:
-      - ai_models_cache:/app/ai_models
+      - ai_models_cache:${AI_MODELS_DIR:-/app/ai_models}
     depends_on:
       - db
     networks:

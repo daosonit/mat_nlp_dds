@@ -48,29 +48,11 @@ class PhoBertStrategy(ModelStrategy):
 
     def _init_vncorenlp(self):
         """Khởi tạo VnCoreNLP segmenter."""
-        jar_path = os.path.join(self._vncorenlp_dir, "VnCoreNLP-1.2.jar")
-
-        if not os.path.exists(jar_path):
-            logger.info("Đang tải model VnCoreNLP lần đầu...")
-            os.makedirs(self._vncorenlp_dir, exist_ok=True)
-            try:
-                import shutil
-
-                models_dir = os.path.join(self._vncorenlp_dir, "models")
-                if os.path.exists(models_dir):
-                    shutil.rmtree(models_dir)
-                py_vncorenlp.download_model(save_dir=self._vncorenlp_dir)
-            except Exception as e:
-                logger.error(f"Không thể tải VnCoreNLP: {e}", exc_info=True)
-                raise
-
+        logger.info(f"Đang khởi tạo VnCoreNLP từ {self._vncorenlp_dir}...")
         try:
-            logger.info("Đang khởi tạo RDRSegmenter...")
-            current_dir = os.getcwd()
             self._segmenter = py_vncorenlp.VnCoreNLP(
                 annotators=["wseg"], save_dir=self._vncorenlp_dir
             )
-            os.chdir(current_dir)
             logger.info("RDRSegmenter đã sẵn sàng.")
         except Exception as e:
             logger.error(f"Không thể khởi tạo VnCoreNLP: {e}", exc_info=True)
