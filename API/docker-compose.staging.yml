@@ -1,0 +1,21 @@
+services:
+  api:
+    image: mat_api:staging
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      # Mount code trực tiếp để dev/staging có thể hot-reload
+      - .:/app
+      # Mount thư mục cache model giống file docker-compose gốc
+      - ai_models_cache:/app/ai_models
+    ports:
+      - "8000:8000"
+    # Lệnh sẽ cài đặt thư viện mới nhất, chạy migration và start uvicorn với chế độ reload
+    command: sh -c "pip install -r requirements.txt && alembic upgrade head && uvicorn serve:app --host 0.0.0.0 --port 8000 --reload"
+    restart: unless-stopped
+
+volumes:
+  ai_models_cache:
