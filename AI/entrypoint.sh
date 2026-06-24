@@ -11,14 +11,32 @@ pip install --no-cache-dir -r requirements.txt
 pip install --no-cache-dir huggingface_hub py_vncorenlp protobuf >/dev/null 2>&1
 
 python -c "
-import py_vncorenlp, os, shutil
+import urllib.request, os
+
 save_dir = './libs/vncorenlp'
 target = os.path.join(save_dir, 'models', 'wordsegmenter', 'wordsegmenter.rdr')
+
 if not os.path.exists(target):
-    print('1. Đang tải VnCoreNLP vào ./libs...')
-    os.makedirs(save_dir, exist_ok=True)
+    print('1. Đang tải VnCoreNLP (thuần Python) vào ./libs...')
+    base_url = 'https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master'
+    files = [
+        'VnCoreNLP-1.2.jar',
+        'models/wordsegmenter/vi-vocab',
+        'models/wordsegmenter/wordsegmenter.rdr',
+        'models/postagger/vi-tagger',
+        'models/ner/vi-500brownclusters.xz',
+        'models/ner/vi-ner.xz',
+        'models/ner/vi-pretrainedembeddings.xz',
+        'models/dep/vi-dep.xz',
+    ]
     try:
-        py_vncorenlp.download_model(save_dir=save_dir)
+        for f in files:
+            url = f'{base_url}/{f}'
+            local_path = os.path.join(save_dir, f)
+            os.makedirs(os.path.dirname(local_path), exist_ok=True)
+            if not os.path.exists(local_path):
+                print(f'Downloading {f}...')
+                urllib.request.urlretrieve(url, local_path)
         print('Tải xong VnCoreNLP.')
     except Exception as e:
         print(f'Lỗi tải VnCoreNLP: {e}')

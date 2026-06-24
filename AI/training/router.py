@@ -1,9 +1,5 @@
-import logging
-
 from training.base import ModelStrategy
 from libs.detection import TeencodeDetector
-
-logger = logging.getLogger(__name__)
 
 
 class ModelRouter:
@@ -27,7 +23,6 @@ class ModelRouter:
     def register(self, name: str, strategy: ModelStrategy):
         """Đăng ký một strategy mới vào router."""
         self._strategies[name] = strategy
-        logger.info(f"Đã đăng ký model strategy: '{name}'")
 
     def set_default(self, name: str):
         """Đặt strategy mặc định (khi text không phải teencode)."""
@@ -46,7 +41,6 @@ class ModelRouter:
             strategy = self._strategies.get("visobert")
             if strategy:
                 return strategy
-            logger.warning("ViSoBERT chưa đăng ký, fallback sang default.")
 
         return self._strategies[self._default_strategy_name]
 
@@ -101,7 +95,9 @@ class ModelRouter:
             phobert_strategy = self._strategies.get(
                 "phobert", self._strategies[self._default_strategy_name]
             )
+            # Xử lý bằng PhoBERT
             results = phobert_strategy.predict_batch(texts)
+            # Trả kết quả về đúng thứ tự ban đầu
             for item, res in zip(phobert_items, results):
                 item["result"] = res
 
@@ -110,7 +106,9 @@ class ModelRouter:
             visobert_strategy = self._strategies.get(
                 "visobert", self._strategies[self._default_strategy_name]
             )
+            # Xử lý bằng ViSoBERT
             results = visobert_strategy.predict_batch(texts)
+            # Trả kết quả về đúng thứ tự ban đầu
             for item, res in zip(visobert_items, results):
                 item["result"] = res
 

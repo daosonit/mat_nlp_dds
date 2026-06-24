@@ -1,10 +1,8 @@
-import logging
 
 # pyrefly: ignore [missing-import]
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from core.base.base_config import BaseTrainConfig
 
-logger = logging.getLogger(__name__)
 
 
 class BaseModelBuilder:
@@ -24,7 +22,6 @@ class BaseModelBuilder:
         """Tải Tokenizer và mô hình từ HuggingFace."""
         model_name = self.config.model_name
 
-        logger.info(f"Dang tai Tokenizer tu: {model_name}...")
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         except Exception as e:
@@ -33,7 +30,6 @@ class BaseModelBuilder:
                 f"Chi tiet: {e}"
             )
 
-        logger.info(f"Dang tai Model tu: {model_name}...")
         try:
             self.model = AutoModelForSequenceClassification.from_pretrained(
                 model_name,
@@ -47,5 +43,4 @@ class BaseModelBuilder:
                 f"Khong the tai Model tu '{model_name}'.\nChi tiet: {e}"
             )
 
-        logger.info(f"Model da san sang voi {num_labels} nhan.")
         return self.tokenizer, self.model

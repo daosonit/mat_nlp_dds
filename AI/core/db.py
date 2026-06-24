@@ -1,8 +1,6 @@
 import os
-import logging
 import asyncpg
 
-logger = logging.getLogger(__name__)
 
 
 class DatabasePool:
@@ -13,7 +11,6 @@ class DatabasePool:
         if not self.pool:
             database_url = os.getenv("DATABASE_URL")
             if not database_url:
-                logger.warning("DATABASE_URL không tồn tại trong biến môi trường!")
                 return
 
             if database_url.startswith("postgresql+asyncpg://"):
@@ -28,15 +25,12 @@ class DatabasePool:
                     min_size=1,
                     max_size=10,
                 )
-                logger.info("Đã kết nối thành công tới PostgreSQL (asyncpg pool).")
             except Exception as e:
-                logger.error(f"Lỗi khi kết nối tới CSDL: {e}")
                 raise
 
     async def disconnect(self):
         if self.pool:
             await self.pool.close()
-            logger.info("Đã đóng kết nối PostgreSQL.")
 
     async def fetch(self, query: str, *args):
         """Thực thi câu SELECT và trả về danh sách kết quả"""

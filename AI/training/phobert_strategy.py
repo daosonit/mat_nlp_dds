@@ -1,5 +1,4 @@
 import os
-import logging
 
 # pyrefly: ignore [missing-import]
 import py_vncorenlp
@@ -9,8 +8,6 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipe
 
 from training.base import ModelStrategy
 from core.config import PHOBERT_MODEL_DIR, VNCORENLP_DIR
-
-logger = logging.getLogger(__name__)
 
 
 class PhoBertStrategy(ModelStrategy):
@@ -27,7 +24,7 @@ class PhoBertStrategy(ModelStrategy):
         model_path: str = PHOBERT_MODEL_DIR,
         fallback_model: str = "vinai/phobert-base-v2",
         vncorenlp_dir: str = VNCORENLP_DIR,
-        device: int = -1,
+        device: str = "cpu",
     ):
         self._model_path = model_path
         self._fallback_model = fallback_model
@@ -44,18 +41,14 @@ class PhoBertStrategy(ModelStrategy):
         """Khởi tạo VnCoreNLP + Model pipeline (gọi 1 lần khi startup)."""
         self._init_vncorenlp()
         self._init_pipeline()
-        logger.info("PhoBERT Strategy đã sẵn sàng.")
 
     def _init_vncorenlp(self):
         """Khởi tạo VnCoreNLP segmenter."""
-        logger.info(f"Đang khởi tạo VnCoreNLP từ {self._vncorenlp_dir}...")
         try:
             self._segmenter = py_vncorenlp.VnCoreNLP(
                 annotators=["wseg"], save_dir=self._vncorenlp_dir
             )
-            logger.info("RDRSegmenter đã sẵn sàng.")
         except Exception as e:
-            logger.error(f"Không thể khởi tạo VnCoreNLP: {e}", exc_info=True)
             self._segmenter = None
 
     def _init_pipeline(self):
@@ -63,13 +56,8 @@ class PhoBertStrategy(ModelStrategy):
         model_path = self._model_path
 
         if not os.path.exists(model_path):
-            logger.warning(
-                f"Chưa tìm thấy model fine-tuned tại '{model_path}'. "
-                f"Đang dùng model gốc: {self._fallback_model}"
-            )
             model_path = self._fallback_model
-
-        logger.info(f"Đang tải PhoBERT từ: {model_path}")
+        # use_fast=False? Tokenizer của PhoBERT sử dụng Byte-Pair Encoding (BPE) truyền thống, tương thích hoàn hảo 100% với phiên bản Fast (Rust) của thư viện Tokenizers. Nên bạn có thể để mặc định (nó sẽ tự chọn bản Fast để có tốc độ cao nhất) mà không lo lỗi.
         tokenizer = AutoTokenizer.from_pretrained(model_path)
         model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
@@ -80,14 +68,12 @@ class PhoBertStrategy(ModelStrategy):
             device=self._device,
             batch_size=16,  # Bật cơ chế Batching
         )
-        logger.info("PhoBERT pipeline đã khởi tạo thành công.")
 
     def preprocess(self, text: str) -> str:
         """Tách từ tiếng Việt bằng VnCoreNLP."""
         if self._segmenter:
             segmented_sentences = self._segmenter.word_segment(text)
             return " ".join(segmented_sentences)
-        logger.warning("VnCoreNLP chưa sẵn sàng, trả về text gốc (fallback).")
         return text
 
     def predict(self, text: str) -> dict:

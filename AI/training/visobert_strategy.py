@@ -1,5 +1,4 @@
 import os
-import logging
 
 # pyrefly: ignore [missing-import]
 from transformers import (
@@ -10,8 +9,6 @@ from transformers import (
 
 from training.base import ModelStrategy
 from core.config import VISOBERT_MODEL_DIR
-
-logger = logging.getLogger(__name__)
 
 
 class ViSoBertStrategy(ModelStrategy):
@@ -28,7 +25,7 @@ class ViSoBertStrategy(ModelStrategy):
         self,
         model_path: str = VISOBERT_MODEL_DIR,
         fallback_model: str = "uitnlp/visobert",
-        device: int = -1,
+        device: str = "cpu",
     ):
         self._model_path = model_path
         self._fallback_model = fallback_model
@@ -42,26 +39,16 @@ class ViSoBertStrategy(ModelStrategy):
     def initialize(self):
         """Khởi tạo Model pipeline (gọi 1 lần khi startup)."""
         self._init_pipeline()
-        logger.info("ViSoBERT Strategy đã sẵn sàng.")
 
     def _init_pipeline(self):
         """Tải model ViSoBERT và tạo HuggingFace pipeline."""
         model_path = self._model_path
 
         if not os.path.exists(model_path):
-            logger.warning(
-                f"Chưa tìm thấy model fine-tuned tại '{model_path}'. "
-                f"Đang dùng model gốc: {self._fallback_model}"
-            )
             model_path = self._fallback_model
 
-        logger.info(f"Đang tải ViSoBERT từ: {model_path}")
-        #              tokenizer1 = AutoTokenizer.from_pretrained(
-        # -            model_path, use_fast=False
-        # )
-        tokenizer = XLMRobertaTokenizer.from_pretrained(
-            model_path, use_fast=False
-        )
+        # use_fast=False sử dụng bản code bằng Python (chậm), an toàn, còn lại là Rust
+        tokenizer = XLMRobertaTokenizer.from_pretrained(model_path, use_fast=False)
         model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
         self._pipeline = pipeline(
@@ -71,7 +58,6 @@ class ViSoBertStrategy(ModelStrategy):
             device=self._device,
             batch_size=16,  # Bật cơ chế Batching
         )
-        logger.info("ViSoBERT pipeline đã khởi tạo thành công.")
 
     def preprocess(self, text: str) -> str:
         """ViSoBERT không cần tiền xử lý, trả về text gốc."""

@@ -35,36 +35,50 @@ class RabbitMQService:
 
     def __init__(self):
         self.connection = None
-        self.channel = None
+        self.publisher_channel = None
+        self.consumer_channel = None
 
     async def connect(self):
         """Khởi tạo kết nối siêu tốc đến đập thủy điện RabbitMQ"""
-        if not self.connection:
+        if not self.connection or self.connection.is_closed:
             try:
                 # connect_robust giúp tự động kết nối lại nếu bị đứt mạng tạm thời
                 self.connection = await aio_pika.connect_robust(RABBITMQ_URL)
-                self.channel = await self.connection.channel()
             except Exception as e:
                 raise e
+
+    async def get_publisher_channel(self) -> aio_pika.Channel:
+        """Tạo/Lấy channel dùng riêng cho việc gửi (Publish)"""
+        await self.connect()
+        if not self.publisher_channel or self.publisher_channel.is_closed:
+            self.publisher_channel = await self.connection.channel()
+        return self.publisher_channel
+
+    async def get_consumer_channel(self) -> aio_pika.Channel:
+        """Tạo/Lấy channel dùng riêng cho việc nghe (Consume)"""
+        await self.connect()
+        if not self.consumer_channel or self.consumer_channel.is_closed:
+            self.consumer_channel = await self.connection.channel()
+        return self.consumer_channel
 
     async def close(self):
         """Đóng kết nối an toàn khi tắt app"""
         if self.connection and not self.connection.is_closed:
             await self.connection.close()
 
-    async def _setup_queue(self, queue_name: str):
+    async def _setup_queue(self, channel: aio_pika.Channel, queue_name: str):
         """Khởi tạo Queue với DLX. Tự động xóa và tạo lại nếu cấu hình cũ không khớp."""
         dlx_name = f"{queue_name}_dlx"
         dlq_name = f"{queue_name}_dead_letters"
 
         try:
-            dlx = await self.channel.declare_exchange(
+            dlx = await channel.declare_exchange(
                 dlx_name, aio_pika.ExchangeType.DIRECT, durable=True
             )
-            dlq = await self.channel.declare_queue(dlq_name, durable=True)
+            dlq = await channel.declare_queue(dlq_name, durable=True)
             await dlq.bind(dlx, routing_key=queue_name)
 
-            queue = await self.channel.declare_queue(
+            queue = await channel.declare_queue(
                 queue_name,
                 durable=True,
                 arguments={
@@ -74,14 +88,9 @@ class RabbitMQService:
             )
             return queue
         except Exception as e:
-            if "PRECONDITION_FAILED" in str(e):
-                # Khi Channel gặp PRECONDITION_FAILED, RabbitMQ tự động đóng Channel đó. Ta phải mở lại.
-                self.channel = await self.connection.channel()
-                await self.channel.queue_delete(queue_name)
-                # Gọi lại chính nó sau khi xóa xong
-                return await self._setup_queue(queue_name)
-            else:
-                raise e
+            # Gặp lỗi cấu hình hoặc PRECONDITION_FAILED, ném lỗi để luồng bên ngoài
+            # (như hàm try/except ở consume_messages_batch) tự động cấp phát lại Channel mới.
+            raise e
 
     async def publish_message(self, message: dict, routing_key: str):
         """
@@ -89,14 +98,13 @@ class RabbitMQService:
         Nhận request và ném ngay lập tức vào Queue đích danh.
         Tốc độ ném cực nhanh, không block luồng hiện tại.
         """
-        if not self.channel:
-            await self.connect()
+        channel = await self.get_publisher_channel()
 
         # Khai báo queue trước khi publish để chắc chắn nó tồn tại cùng với cấu hình DLX
-        await self._setup_queue(routing_key)
+        await self._setup_queue(channel, routing_key)
 
         message_body = json.dumps(message).encode()
-        await self.channel.default_exchange.publish(
+        await channel.default_exchange.publish(
             aio_pika.Message(
                 body=message_body,
                 # PERSISTENT: Lưu thẳng tin nhắn xuống ổ cứng (HDD/SSD) để đảm bảo không rớt data
@@ -112,10 +120,9 @@ class RabbitMQService:
         """
         if not self.connection or self.connection.is_closed:
             self.connection = None
-            self.channel = None
+            self.publisher_channel = None
+            self.consumer_channel = None
             await self.connect()
-        elif self.channel.is_closed:
-            self.channel = await self.connection.channel()
 
     async def _reject_messages(self, messages: list, requeue: bool):
         """
@@ -203,10 +210,11 @@ class RabbitMQService:
             try:
                 # 1. Chuẩn bị kết nối và Queue (DLX)
                 await self._ensure_connection()
-                queue = await self._setup_queue(queue_name)
+                channel = await self.get_consumer_channel()
+                queue = await self._setup_queue(channel, queue_name)
 
                 # 2. Tối ưu Pipeline mạng (luôn tải sẵn gấp đôi lượng cần thiết)
-                await self.channel.set_qos(prefetch_count=batch_size * 2)
+                await channel.set_qos(prefetch_count=batch_size * 2)
 
                 retry_count = 0  # Reset bộ đếm lỗi khi đã chạy ngon lành
 

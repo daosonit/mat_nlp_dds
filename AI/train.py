@@ -113,15 +113,7 @@ if __name__ == "__main__":
     }
 
     if args.model in ["phobert", "both"]:
-        logger.info("=" * 50)
-        logger.info("  HUẤN LUYỆN MÔ HÌNH: PhoBERT")
-        logger.info("  (Chuyên biệt cho văn bản tiếng Việt chuẩn)")
-        logger.info("=" * 50)
         train_phobert(raw_data=sample_data, **train_kwargs)
 
     if args.model in ["visobert", "both"]:
-        logger.info("=" * 50)
-        logger.info("  HUẤN LUYỆN MÔ HÌNH: ViSoBERT")
-        logger.info("  (Chuyên biệt cho social media / teencode)")
-        logger.info("=" * 50)
         train_visobert(raw_data=sample_data, **train_kwargs)

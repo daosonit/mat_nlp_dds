@@ -1,4 +1,3 @@
-import logging
 
 # pyrefly: ignore [missing-import]
 from transformers import AutoTokenizer
@@ -8,7 +7,6 @@ from core.PhoBERT.config import PhoBertTrainConfig
 from core.PhoBERT.data_processor import PhoBertDataProcessor
 from core.PhoBERT.model_builder import PhoBertModelBuilder
 
-logger = logging.getLogger(__name__)
 
 
 class PhoBertTrainingPipeline(BaseTrainingPipeline):
@@ -26,7 +24,6 @@ class PhoBertTrainingPipeline(BaseTrainingPipeline):
 
     def prepare_data(self, raw_data: list):
         """Khởi động VnCoreNLP → tách từ → tokenize."""
-        logger.info("--- BƯỚC 1: CHUẨN BỊ DỮ LIỆU (PhoBERT) ---")
 
         # PhoBERT cần VnCoreNLP để tách từ tiếng Việt
         segmenter = self.model_builder.build_vncorenlp()
@@ -40,4 +37,3 @@ class PhoBertTrainingPipeline(BaseTrainingPipeline):
             tokenizer=temp_tokenizer,
             segmenter=segmenter,
         )
-        logger.info("Hoàn tất chuẩn bị dữ liệu PhoBERT!")

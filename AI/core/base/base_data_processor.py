@@ -1,7 +1,6 @@
 import os
 import json
 import hashlib
-import logging
 from abc import ABC, abstractmethod
 
 # pyrefly: ignore [missing-import]
@@ -9,7 +8,6 @@ from datasets import Dataset
 from tqdm import tqdm
 from core.base.base_config import BaseTrainConfig
 
-logger = logging.getLogger(__name__)
 
 
 class BaseDataProcessor(ABC):
@@ -63,9 +61,6 @@ class BaseDataProcessor(ABC):
         self.id2label = {idx: label for idx, label in enumerate(unique_labels)}
         self.num_labels = len(self.label2id)
 
-        logger.info(
-            f"Da xay dung ban do cho {self.num_labels} nhan: {list(self.label2id.keys())}"
-        )
 
     def _clean_and_validate(self, raw_data: list):
         """Lọc bỏ các bản ghi lỗi hoặc thiếu trường thông tin."""
@@ -89,9 +84,6 @@ class BaseDataProcessor(ABC):
 
             clean_data.append({"text": text, "label": label})
 
-        logger.info(
-            f"Thong ke du lieu: {len(clean_data)} hop le, {skipped} bi loai bo."
-        )
         return clean_data
 
     def _compute_data_hash(self, clean_data: list) -> str:
@@ -121,18 +113,18 @@ class BaseDataProcessor(ABC):
         )
 
         if os.path.exists(cache_path):
-            logger.info(f"Tim thay cache ({cache_path}). Doc tu o cung...")
             with open(cache_path, "r", encoding="utf-8") as f:
                 cached = json.load(f)
             processed_texts = cached["texts"]
             labels = cached["labels"]
         else:
-            logger.info("Khong tim thay cache. Bat dau tien xu ly du lieu...")
             processed_texts = []
             labels = []
             errors = 0
 
-            for item in tqdm(clean_data, desc=f"Xu ly du lieu ({self._cache_prefix})", unit="cau"):
+            for item in tqdm(
+                clean_data, desc=f"Xu ly du lieu ({self._cache_prefix})", unit="cau"
+            ):
                 try:
                     processed_text = self._preprocess_text(item["text"], **kwargs)
                     processed_texts.append(processed_text)
@@ -142,7 +134,6 @@ class BaseDataProcessor(ABC):
                     continue
 
             if errors > 0:
-                logger.warning(f"Co {errors} cau bi loi khi xu ly (da bo qua).")
 
             # Lưu cache
             os.makedirs(self.config.cache_dir, exist_ok=True)
@@ -150,14 +141,10 @@ class BaseDataProcessor(ABC):
                 json.dump(
                     {"texts": processed_texts, "labels": labels}, f, ensure_ascii=False
                 )
-            logger.info(f"Da luu cache tai: {cache_path}")
 
         # 4. Tạo HuggingFace Dataset và chia Train/Test
         dataset = Dataset.from_dict({"text": processed_texts, "label": labels})
         dataset = dataset.train_test_split(test_size=0.2, seed=self.config.seed)
-        logger.info(
-            f"Chia du lieu: Train={len(dataset['train'])} | Test={len(dataset['test'])}"
-        )
 
         # 5. Tokenize dữ liệu bằng bộ tokenizer của model
         def tokenize_function(examples):
@@ -168,8 +155,6 @@ class BaseDataProcessor(ABC):
                 max_length=self.config.max_length,
             )
 
-        logger.info("Dang Ma hoa van ban (Tokenization)...")
         tokenized_datasets = dataset.map(tokenize_function, batched=True)
-        logger.info("Tien xu ly du lieu hoan tat!")
 
         return tokenized_datasets

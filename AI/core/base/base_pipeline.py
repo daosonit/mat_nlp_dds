@@ -1,6 +1,5 @@
 import os
 import json
-import logging
 from abc import ABC, abstractmethod
 
 import numpy as np
@@ -14,7 +13,6 @@ from transformers import Trainer, TrainingArguments, EarlyStoppingCallback
 from torch import nn
 from core.base.base_config import BaseTrainConfig
 
-logger = logging.getLogger(__name__)
 
 
 class BaseTrainingPipeline(ABC):
@@ -48,7 +46,6 @@ class BaseTrainingPipeline(ABC):
 
     def build_model(self):
         """Khởi tạo Model dựa trên số lượng nhãn (DÙNG CHUNG)."""
-        logger.info("--- BƯỚC 2: KHỞI TẠO MÔ HÌNH ---")
         if self.data_processor.num_labels == 0:
             raise RuntimeError(
                 "Chưa quét dữ liệu để lấy nhãn. Hãy chạy prepare_data() trước!"
@@ -59,7 +56,6 @@ class BaseTrainingPipeline(ABC):
             label2id=self.data_processor.label2id,
             id2label=self.data_processor.id2label,
         )
-        logger.info("Hoàn tất khởi tạo mô hình!")
 
     def _compute_metrics(self, eval_pred):
         """Hàm tính toán đa chỉ số nội bộ cho Trainer (DÙNG CHUNG)."""
@@ -80,17 +76,14 @@ class BaseTrainingPipeline(ABC):
 
     def train_and_save(self):
         """Khởi động quá trình Huấn luyện và Lưu trữ mô hình (DÙNG CHUNG)."""
-        logger.info("--- BƯỚC 3: HUẤN LUYỆN & LƯU MÔ HÌNH ---")
 
         report_to = ["wandb"] if self.config.use_wandb else ["none"]
         use_fp16 = self.config.use_fp16 and torch.cuda.is_available()
 
         if self.config.use_fp16 and not torch.cuda.is_available():
-            logger.warning("FP16 bị tắt vì không tìm thấy GPU. Đang chạy bằng CPU.")
             
         use_cpu_flag = False
         if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-            logger.warning("Phát hiện lỗi MPS trên Mac. Đang ép buộc dùng CPU để đảm bảo ổn định.")
             use_cpu_flag = True
 
         training_args = TrainingArguments(
@@ -121,7 +114,6 @@ class BaseTrainingPipeline(ABC):
         classes = np.unique(train_labels)
         weights = compute_class_weight(class_weight="balanced", classes=classes, y=train_labels)
         class_weights_tensor = torch.tensor(weights, dtype=torch.float).to(self.model_builder.model.device)
-        logger.info(f"Class weights (can bang du lieu): {weights}")
 
         class CustomTrainer(Trainer):
             def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
@@ -145,20 +137,11 @@ class BaseTrainingPipeline(ABC):
             processing_class=self.model_builder.tokenizer,
         )
 
-        logger.info(
-            f"Trainer cấu hình: "
-            f"Model={self.config.model_name} | "
-            f"FP16={'Bật' if use_fp16 else 'Tắt'} | "
-            f"Batch giả lập={self.config.batch_size * self.config.gradient_accumulation_steps} | "
-            f"LR Scheduler=Cosine"
-        )
 
         # 1. Bắt đầu train
-        logger.info("ĐANG HUẤN LUYỆN (Training)...")
         self.trainer.train()
 
         # 2. Lưu mô hình
-        logger.info(f"Lưu mô hình hoàn chỉnh vào: {self.config.output_dir}")
         self.trainer.save_model(self.config.output_dir)
         self.model_builder.tokenizer.save_pretrained(self.config.output_dir)
 
@@ -174,4 +157,3 @@ class BaseTrainingPipeline(ABC):
                 ensure_ascii=False,
             )
 
-        logger.info("=== QUÁ TRÌNH HUẤN LUYỆN ĐÃ HOÀN TẤT THÀNH CÔNG! ===")

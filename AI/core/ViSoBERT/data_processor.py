@@ -1,8 +1,6 @@
 import re
-import logging
 from core.base.base_data_processor import BaseDataProcessor
 
-logger = logging.getLogger(__name__)
 
 
 class ViSoBertDataProcessor(BaseDataProcessor):

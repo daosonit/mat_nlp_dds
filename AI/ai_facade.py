@@ -1,6 +1,5 @@
 import sys
 import os
-import logging
 import torch
 
 # Thêm thư mục NLP vào sys.path để load được các module chung
@@ -13,8 +12,6 @@ from training.phobert_strategy import PhoBertStrategy
 from training.visobert_strategy import ViSoBertStrategy
 from training.router import ModelRouter
 
-logger = logging.getLogger(__name__)
-
 
 class AIFacade:
     """
@@ -25,22 +22,22 @@ class AIFacade:
     @staticmethod
     def initialize_api_resources(app):
         """Khởi tạo các tài nguyên nhẹ dành riêng cho API Server."""
-        logger.info("=" * 50)
-        logger.info("  KHỞI TẠO API GATEWAY")
-        logger.info("=" * 50)
-
-        logger.info("API Gateway đã sẵn sàng!")
-        logger.info("=" * 50)
+        pass
 
     @staticmethod
     def initialize_worker_resources() -> ModelRouter:
-        """Khởi tạo các tài nguyên nặng (AI Models) dành riêng cho Worker."""
-        logger.info("=" * 50)
-        logger.info("  KHỞI TẠO AI WORKER MODELS")
-        logger.info("=" * 50)
-
-        device = 0 if torch.cuda.is_available() else -1
-        logger.info(f"Thiết bị: {'GPU' if device == 0 else 'CPU'}")
+        """
+        Khởi tạo các tài nguyên nặng (AI Models) dành riêng cho Worker.
+        Code chạy trên Ubuntu: Dùng GPU (CUDA)
+        Code chạy trên Macbook của bạn: Dùng GPU (MPS)
+        Code chạy trên máy đời cũ/không có card: Dùng CPU
+        """
+        if torch.cuda.is_available():
+            device = "cuda:0"  # Dành cho server Ubuntu có card NVIDIA
+        elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            device = "mps"  # Dành cho Macbook chip M1/M2/M3...
+        else:
+            device = "cpu"  # Chạy bằng chip CPU bình thường
 
         # Lấy đường dẫn tuyệt đối của thư mục chứa ai_facade.py
         base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -51,21 +48,18 @@ class AIFacade:
             min_matches=1,
         )
 
-        # 2. PhoBERT Strategy
+        # 2. Nạp mô hình PhoBERT
         phobert = PhoBertStrategy(device=device)
         phobert.initialize()
 
-        # 3. ViSoBERT Strategy
+        # 3. Nạp mô hình ViSoBERT
         visobert = ViSoBertStrategy(device=device)
         visobert.initialize()
 
-        # 4. Model Router (đăng ký strategies)
+        # 4. Đăng ký Model Router
         router = ModelRouter(detector=detector)
         router.register("phobert", phobert)
         router.register("visobert", visobert)
         router.set_default("phobert")
-
-        logger.info("AI Worker Models đã sẵn sàng!")
-        logger.info("=" * 50)
 
         return router
