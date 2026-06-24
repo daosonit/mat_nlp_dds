@@ -23,7 +23,7 @@ end
 print(string.format("Đã nạp thành công %d viên đạn (bình luận) vào nòng súng LUA!", #comments))
 
 -- Đặt Authorization Key
-local API_KEY = os.getenv("N8N_API_KEY") or "matgroup_n8n_secret_2026"
+local API_KEY = os.getenv("API_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc4Mjg5MTYyN30.2jESTdblm481_w9TACwdE8xMgFFRw9nw-24Vj6zMnVY"
 
 -- =============================================================================
 -- HÀM NÀY ĐƯỢC GỌI TRƯỚC MỖI LẦN BÓP CÒ (Sinh ra từng Request)
@@ -44,7 +44,7 @@ request = function()
     headers["Content-Type"] = "application/json"
     headers["Authorization"] = "Bearer " .. API_KEY
     
-    return wrk.format("POST", "/webhook/test1", headers, payload)
+    return wrk.format("POST", "/predict", headers, payload)
 end
 
 -- =============================================================================
@@ -52,7 +52,7 @@ end
 -- =============================================================================
 -- Để bắn thử vũ khí này, bạn mở Terminal và gõ:
 -- 
--- wrk -t12 -c400 -d30s -s Api/webhook/wrk_nuclear_bomb.lua http://192.168.1.99:56781
+-- wrk -t12 -c400 -d30s -s Api/webhook/wrk_nuclear_bomb.lua http://192.168.1.99:8000
 --
 -- GIẢI THÍCH THÔNG SỐ:
 -- -t12 : Dùng 12 luồng vật lý của CPU (Threads).

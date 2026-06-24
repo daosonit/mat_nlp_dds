@@ -44,8 +44,8 @@ const commentsData = new SharedArray('Car Comments', function () {
     return f; 
 });
 
-const URL = __ENV.N8N_WEBHOOK_URL || 'http://192.168.1.99:56781/webhook/test1';
-const API_KEY = __ENV.N8N_API_KEY || 'matgroup_n8n_secret_2026';
+const URL = __ENV.PREDICT_URL || 'http://192.168.1.99:8000/predict';
+const API_KEY = __ENV.API_TOKEN || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc4Mjg5MTYyN30.2jESTdblm481_w9TACwdE8xMgFFRw9nw-24Vj6zMnVY';
 
 export default function () {
     // Rút ngẫu nhiên 1 bình luận

@@ -4,29 +4,15 @@ import random
 from datetime import datetime
 from locust import FastHttpUser, task, between
 from dotenv import load_dotenv
+from ultils import generate_random_comment
 
 load_dotenv()
 
-N8N_WEBHOOK_URL = os.getenv(
-    "N8N_WEBHOOK_URL", "http://192.168.1.99:56781/webhook/test1"
+PREDICT_URL = os.getenv("PREDICT_URL", "http://192.168.1.99:8000/predict")
+API_TOKEN = os.getenv(
+    "API_TOKEN",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc4Mjg5MTYyN30.2jESTdblm481_w9TACwdE8xMgFFRw9nw-24Vj6zMnVY",
 )
-N8N_API_KEY = os.getenv("N8N_API_KEY", "matgroup_n8n_secret_2026")
-
-
-# Nạp dữ liệu 1 lần duy nhất ở cấp độ Module (Biến Toàn Cục)
-# Việc này đảm bảo kể cả khi có 10,000 user sinh ra, file 52MB vẫn chỉ đọc 1 lần!
-def load_comments():
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(current_dir, "million_car_comments.json")
-    try:
-        with open(json_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return ["Lỗi dữ liệu mock"]
-
-
-print("Đang nạp dữ liệu Mock 52MB vào RAM cho Cảnh giới 2...")
-COMMENTS_DATA = load_comments()
 
 
 class N8NLoadTester(FastHttpUser):
@@ -38,16 +24,16 @@ class N8NLoadTester(FastHttpUser):
 
     @task
     def shoot_webhook(self):
-        random_text = random.choice(COMMENTS_DATA)
+        random_text = generate_random_comment()
         payload = {
             "text": random_text,
             "timer": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
-        headers = {"Authorization": f"Bearer {N8N_API_KEY}"}
+        headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
         # FastHttpUser tự động gom connection pool và xử lý cực nhanh
         with self.client.post(
-            N8N_WEBHOOK_URL,
+            PREDICT_URL,
             json=payload,
             headers=headers,
             timeout=15.0,

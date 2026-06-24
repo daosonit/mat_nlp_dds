@@ -7,37 +7,27 @@ import httpx
 import asyncio
 from datetime import datetime
 from dotenv import load_dotenv
+from ultils import generate_random_comment
 
 load_dotenv()
 
-N8N_WEBHOOK_URL = os.getenv(
-    "N8N_WEBHOOK_URL", "http://192.168.1.99:56781/webhook/test1"
+PREDICT_URL = os.getenv("PREDICT_URL", "http://192.168.1.99:8000/predict")
+API_TOKEN = os.getenv(
+    "API_TOKEN",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc4Mjg5MTYyN30.2jESTdblm481_w9TACwdE8xMgFFRw9nw-24Vj6zMnVY",
 )
-N8N_API_KEY = os.getenv("N8N_API_KEY", "matgroup_n8n_secret_2026")
 
 
-def load_comments():
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(current_dir, "million_car_comments.json")
-    try:
-        print("Đang nạp file 52MB vào RAM, vui lòng đợi 1 chút...")
-        with open(json_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Lỗi đọc file dữ liệu: {e}")
-        return ["Lỗi không đọc được dữ liệu mock"]
-
-
-async def trigger_single_request(client, semaphore, headers, comments, run_idx):
+async def trigger_single_request(client, semaphore, headers, run_idx):
     # Xin phép Semaphore trước khi chạy. Nếu đã đủ 50 luồng thì phải xếp hàng chờ.
     async with semaphore:
-        random_text = random.choice(comments)
+        random_text = generate_random_comment()
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         payload = {"text": random_text, "timer": current_time}
 
         try:
             response = await client.post(
-                N8N_WEBHOOK_URL, json=payload, headers=headers, timeout=15.0
+                PREDICT_URL, json=payload, headers=headers, timeout=15.0
             )
             response.raise_for_status()
             print(f"[#{run_idx:04d}] Thành công: {response.text}")
@@ -46,7 +36,6 @@ async def trigger_single_request(client, semaphore, headers, comments, run_idx):
 
 
 async def run_load_test():
-    comments = load_comments()
     total_requests = 1000000
     concurrency_limit = 100  # Luôn giữ đúng 100 kết nối chạy song song
 
@@ -56,15 +45,13 @@ async def run_load_test():
 
     # Khởi tạo Semaphore và Headers 1 lần duy nhất để tối ưu RAM
     semaphore = asyncio.Semaphore(concurrency_limit)
-    headers = {"Authorization": f"Bearer {N8N_API_KEY}"}
+    headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
     # Dùng 1 Client duy nhất để tận dụng Connection Pooling
     async with httpx.AsyncClient() as client:
         tasks = []
         for i in range(1, total_requests + 1):
-            tasks.append(
-                trigger_single_request(client, semaphore, headers, comments, i)
-            )
+            tasks.append(trigger_single_request(client, semaphore, headers, i))
 
         # Kích hoạt toàn bộ mảng. Semaphore sẽ làm nhiệm vụ điều phối luồng xe!
         await asyncio.gather(*tasks)

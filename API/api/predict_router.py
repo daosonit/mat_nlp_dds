@@ -7,12 +7,17 @@ from fastapi import (
     WebSocketDisconnect,
     Query,
     status,
+    BackgroundTasks,
 )
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import re
 import uuid
 from typing import List
+
+from database.session import get_db, AsyncSessionLocal
+from sqlalchemy.ext.asyncio import AsyncSession
+from database.models import Word
 
 from services.rabbitmq_service import rabbitmq, ROUTING_KEY_PREDICT_REQUESTS
 from api.dependencies import verify_jwt_token, verify_ws_jwt_token
@@ -62,11 +67,28 @@ def process_text_for_prediction(text: str, language_detector):
     return True, None, lang_info, text_clean
 
 
+async def save_word_to_db_bg(text_clean: str):
+    async with AsyncSessionLocal() as session:
+        new_word = Word(text=text_clean)
+        session.add(new_word)
+        await session.commit()
+
+
+async def save_words_to_db_bg(texts: List[str]):
+    async with AsyncSessionLocal() as session:
+        words = [Word(text=t) for t in texts]
+        session.add_all(words)
+        await session.commit()
+
+
 @router.post(
     "/predict",
 )
 async def predict(
-    request: PredictRequest, req: Request, username: str = Depends(verify_jwt_token)
+    request: PredictRequest,
+    req: Request,
+    background_tasks: BackgroundTasks,
+    username: str = Depends(verify_jwt_token),
 ):
     """
     Phân tích cảm xúc text tiếng Việt.
@@ -83,6 +105,9 @@ async def predict(
             status_code=400,
             detail=reason,
         )
+
+    # Lưu vào database bảng words (chạy ngầm)
+    background_tasks.add_task(save_word_to_db_bg, text_clean)
 
     # Nếu hợp lệ thì đẩy vào RabbitMQ
     task_id = str(uuid.uuid4())
@@ -111,6 +136,7 @@ async def predict(
 async def predict_batch(
     request: PredictBatchRequest,
     req: Request,
+    background_tasks: BackgroundTasks,
     username: str = Depends(verify_jwt_token),
 ):
     """
@@ -120,6 +146,7 @@ async def predict_batch(
 
     queued_tasks = []
     invalid_texts = []
+    valid_texts = []
 
     for idx, text in enumerate(request.texts):
         is_valid, reason, lang_info, text_clean = process_text_for_prediction(
@@ -138,6 +165,9 @@ async def predict_batch(
             continue
 
         task_id = str(uuid.uuid4())
+
+        valid_texts.append(text_clean)
+
         message_payload = {
             "task_id": task_id,
             "text": text_clean,
@@ -147,8 +177,10 @@ async def predict_batch(
         await rabbitmq.publish_message(
             message_payload, routing_key=ROUTING_KEY_PREDICT_REQUESTS
         )
-
         queued_tasks.append({"index": idx, "task_id": task_id, "text": text_clean})
+
+    if valid_texts:
+        background_tasks.add_task(save_words_to_db_bg, valid_texts)
 
     return JSONResponse(
         status_code=200,

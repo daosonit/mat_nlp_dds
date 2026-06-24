@@ -9,37 +9,26 @@ import multiprocessing
 from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from dotenv import load_dotenv
-
-#  THÊM ĐỘNG CƠ C++
-import uvloop
+from ultils import generate_random_comment
 
 load_dotenv()
 
-N8N_WEBHOOK_URL = os.getenv(
-    "N8N_WEBHOOK_URL", "http://192.168.1.99:56781/webhook/test1"
+PREDICT_URL = os.getenv("PREDICT_URL", "http://192.168.1.99:8000/predict")
+API_TOKEN = os.getenv(
+    "API_TOKEN",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc4Mjg5MTYyN30.2jESTdblm481_w9TACwdE8xMgFFRw9nw-24Vj6zMnVY",
 )
-N8N_API_KEY = os.getenv("N8N_API_KEY", "matgroup_n8n_secret_2026")
 
 
-def load_comments():
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(current_dir, "million_car_comments.json")
-    try:
-        with open(json_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        return ["Lỗi dữ liệu mock"]
-
-
-async def worker(client, queue, headers, comments, stats):
-    """Mỗi worker lấy việc từ Queue ra làm liên tục"""
+async def worker(client, queue, headers, stats):
+    """Worker bất đồng bộ chạy bên trong từng Process"""
     while True:
         try:
             queue.get_nowait()
         except asyncio.QueueEmpty:
             break
 
-        random_text = random.choice(comments)
+        random_text = generate_random_comment()
         payload = {
             "text": random_text,
             "timer": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -47,7 +36,7 @@ async def worker(client, queue, headers, comments, stats):
 
         try:
             response = await client.post(
-                N8N_WEBHOOK_URL, json=payload, headers=headers, timeout=15.0
+                PREDICT_URL, json=payload, headers=headers, timeout=15.0
             )
             response.raise_for_status()
             stats["success"] += 1
@@ -59,22 +48,21 @@ async def worker(client, queue, headers, comments, stats):
 
 async def async_process_runner(num_requests, process_id):
     """Hàm quản lý Event Loop cho từng Process riêng biệt"""
-    comments = load_comments()
     queue = asyncio.Queue()
 
     for i in range(num_requests):
         queue.put_nowait(i)
 
-    headers = {"Authorization": f"Bearer {N8N_API_KEY}"}
+    headers = {"Authorization": f"Bearer {API_TOKEN}"}
     stats = {"success": 0, "fail": 0}
 
-    # Giữ 50 luồng mạng cho mỗi Lõi CPU
+    # Mỗi process chạy 50 công nhân (worker)
     num_async_workers = 50
 
     async with httpx.AsyncClient() as client:
         workers = []
         for _ in range(num_async_workers):
-            task = asyncio.create_task(worker(client, queue, headers, comments, stats))
+            task = asyncio.create_task(worker(client, queue, headers, stats))
             workers.append(task)
 
         await asyncio.gather(*workers)
@@ -84,40 +72,41 @@ async def async_process_runner(num_requests, process_id):
 
 def process_entry_point(num_requests, process_id):
     """Điểm mồi để chạy Asyncio bên trong Multiprocessing"""
-
-    #  KÍCH HOẠT CẢNH GIỚI 1: THAY THẾ LÕI PYTHON BẰNG LÕI C++ UVLOOP
-    # Phải gọi lệnh này TRƯỚC KHI tạo event loop trong process này!
-    uvloop.install()
-
-    print(
-        f"[Core #{process_id}] Khởi động động cơ UVLoop (C++). Đang xử lý {num_requests} requests..."
-    )
+    print(f"[Process #{process_id}] Đang gánh {num_requests} requests...")
+    # Mỗi process tự khởi tạo một Event Loop riêng của nó, né hoàn toàn GIL
     return asyncio.run(async_process_runner(num_requests, process_id))
 
 
-def run_ultimate_uvloop_test():
+def run_ultimate_load_test():
     total_requests = 1000000
     num_cores = multiprocessing.cpu_count()
 
     print("=" * 60)
-    print(f" KÍCH HOẠT CẢNH GIỚI 1: MULTIPROCESSING + ĐỘNG CƠ C++ (UVLOOP) ")
+    print(f" KÍCH HOẠT MÔ HÌNH TỐI THƯỢNG: MULTIPROCESSING + ASYNCIO ")
     print(f"Tổng số requests: {total_requests}")
-    print(f"Lõi xử lý: {num_cores} Cores (Full sức mạnh máy Mac)")
+    print(f"Sử dụng toàn bộ sức mạnh CPU: {num_cores} Lõi (Cores)")
     print("=" * 60)
 
+    # Chia đều công việc cho các lõi CPU
     requests_per_core = total_requests // num_cores
     chunks = [requests_per_core] * num_cores
+
+    # Cộng dồn số lẻ vào lõi cuối cùng
     chunks[-1] += total_requests % num_cores
 
     start_time = datetime.now()
+
+    # Kích hoạt toàn bộ các lõi CPU cùng chạy
     total_success = 0
     total_fail = 0
 
     with ProcessPoolExecutor(max_workers=num_cores) as executor:
+        # Giao việc cho các lõi
         futures = []
         for i, chunk in enumerate(chunks):
             futures.append(executor.submit(process_entry_point, chunk, i))
 
+        # Thu thập kết quả từ các lõi
         for future in futures:
             result = future.result()
             total_success += result["success"]
@@ -128,7 +117,7 @@ def run_ultimate_uvloop_test():
     rps = total_requests / duration if duration > 0 else 0
 
     print("\n" + "=" * 50)
-    print(" ĐÃ HOÀN TẤT CHIẾN DỊCH TẤN CÔNG 1 TRIỆU REQUESTS BẰNG UVLOOP!")
+    print(" ĐÃ HOÀN TẤT CHIẾN DỊCH TẤN CÔNG 1 TRIỆU REQUESTS!")
     print(f" Thời gian tổng: {duration:.2f} giây")
     print(f" Tốc độ (RPS): {rps:.2f} requests / giây")
     print(f" Thành công: {total_success} |  Thất bại: {total_fail}")
@@ -136,24 +125,29 @@ def run_ultimate_uvloop_test():
 
 
 if __name__ == "__main__":
-    run_ultimate_uvloop_test()
+    run_ultimate_load_test()
 
 """
 =============================================================================
-TÀI LIỆU (DOCUMENTATION): CẢNH GIỚI 1 - ĐỘNG CƠ C++ (UVLOOP)
+TÀI LIỆU (DOCUMENTATION): MÔ HÌNH MULTIPROCESSING + ASYNCIO
 =============================================================================
-Nguyên lý nâng cấp tốc độ:
-Mặc định, thư viện `asyncio` của Python được viết bằng chính ngôn ngữ Python (thuần).
-Nó giống như việc bạn lái một chiếc ô tô với động cơ phân khối nhỏ.
+Vấn đề lớn nhất của Python (Cơ chế GIL):
+Dù bạn dùng bao nhiêu luồng `asyncio` hay Worker Pool đi nữa, Python mặc định 
+chỉ cho phép chương trình chạy trên ĐÚNG 1 LÕI (CORE) CPU duy nhất do vướng 
+phải một bức tường gọi là GIL (Global Interpreter Lock). 
+Ví dụ: Nếu máy Mac có 8 Lõi CPU, thì 7 Lõi còn lại sẽ ngồi chơi xơi nước 
+trong khi 1 Lõi đang gánh còng lưng toàn bộ 1 triệu requests!
 
-Bằng cách cài đặt thư viện `uvloop` và gán lệnh `uvloop.install()` vào ngay đầu 
-mỗi tiến trình (process), ta đã tháo cái động cơ cũ của Python ra và lắp vào 
-đó một "động cơ phản lực" được viết 100% bằng ngôn ngữ C/C++ (cùng công nghệ 
-lõi với NodeJS).
+Cách mô hình MultiprocessPool.py (Tối thượng) giải quyết:
+1. Đếm xem máy của bạn có bao nhiêu lõi CPU (ví dụ: 8 Lõi).
+2. Chặt 1 triệu requests ra làm các phần bằng nhau (Mỗi phần 125,000 requests).
+3. "Phân thân" ra làm 8 chương trình Python (Process) chạy hoàn toàn độc lập. 
+   Mỗi chương trình độc chiếm 1 lõi CPU, và tự khởi tạo một đội Worker Pool 
+   (Asyncio) siêu tốc riêng của nó.
+4. Cuối cùng, thu thập và cộng dồn báo cáo tổng từ cả 8 lõi CPU trả về.
 
-Kết hợp với Multiprocessing (chia đều việc cho toàn bộ các lõi CPU của Mac),
-kiến trúc này mang lại tốc độ I/O mạng (Network I/O) nhanh gấp 2 đến 4 lần 
-so với Python mặc định. Đây chính là công thức "Tuyệt kỹ" tối đa nhất mà 
-bạn có thể ép xung được bằng ngôn ngữ Python!
+=> Kết quả: Phá vỡ hoàn toàn giới hạn GIL, huy động 100% toàn bộ sức mạnh phần 
+cứng của chiếc máy Mac. Đây chính là giới hạn vật lý tối đa của ngôn ngữ 
+Python trong việc thiết kế công cụ bắn Load Testing.
 =============================================================================
 """
